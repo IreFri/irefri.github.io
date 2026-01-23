@@ -4,21 +4,132 @@
   <meta charset="utf-8">
   <title>Projects — Irene Frizza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body{font-family:"Times New Roman",Times,serif;background:#eef4fb;margin:0;color:#1f1f1f}
-    .container{max-width:980px;margin:0 auto;padding:50px 25px 70px}
-    nav{margin-bottom:35px;font-size:1.12em}
-    nav a{margin-right:18px;text-decoration:none;color:#004a99}
-    nav a:hover{text-decoration:underline}
-    h1{font-size:2.4em;margin:0 0 10px}
-    .note{font-size:1.12em;margin-bottom:25px}
-    .project{margin-top:22px;padding:22px 24px;background:rgba(255,255,255,0.35);border-radius:12px}
-    .project h2{margin:0 0 8px;font-size:1.45em}
-    .links a{margin-right:12px;color:#004a99;text-decoration:none;font-weight:600}
-    .links a:hover{text-decoration:underline}
-    .tag{display:inline-block;margin-right:8px;margin-top:10px;padding:3px 10px;border-radius:999px;background:rgba(0,74,153,0.10);color:#003a7a;font-size:0.95em}
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5; /* same as Home */
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin: 0 0 10px;
+    }
+
+    .note {
+      font-size: 1.12em;
+      margin-bottom: 28px;
+      max-width: 860px;
+      line-height: 1.5;
+    }
+
+    /* project block: NO white rectangle; keep separation with subtle border */
+    .project {
+      margin-top: 26px;
+      padding: 22px;
+      border-radius: 14px;
+      border: 2px solid rgba(0, 74, 153, 0.14);
+      background: transparent; /* important: no white card */
+    }
+
+    .project-inner {
+      display: flex;
+      gap: 22px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .project-media {
+      flex: 1;
+      min-width: 260px;
+      max-width: 360px;
+    }
+
+    .project-media img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .project-content {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .project h2 {
+      margin: 0 0 10px;
+      font-size: 1.55em;
+    }
+
+    .project p {
+      margin: 0 0 10px;
+      line-height: 1.55;
+      font-size: 1.08em;
+    }
+
+    .tagrow {
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 10px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: rgba(0, 74, 153, 0.10);
+      color: #003a7a;
+      font-size: 0.95em;
+    }
+
+    .links {
+      margin-top: 14px;
+      font-size: 1.05em;
+    }
+
+    .links a {
+      margin-right: 14px;
+      color: #004a99;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .project-media {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <nav>
@@ -31,64 +142,140 @@
     </nav>
 
     <h1>Projects</h1>
-    <div class="note">Selected robotics projects focused on locomotion, contact-rich interaction, and compliant control.</div>
+    <div class="note">
+      Selected projects showing how I design, analyze, and validate humanoid locomotion and physical-interaction systems —
+      from compliant hardware to control and learning-based evaluation.
+    </div>
 
+    <!-- PROJECT 1 -->
     <div class="project">
-      <h2>Compliant Leg Joints for Humanoid Locomotion</h2>
-      <div>
-        Designed and implemented compliant leg joints with parallel and series elasticity for humanoid locomotion.
-        Built simulation pipelines and used reinforcement learning for stability, impact absorption, and robustness evaluation.
-      </div>
-      <div>
-        <span class="tag">Humanoids</span><span class="tag">Locomotion</span><span class="tag">Compliance</span><span class="tag">Isaac Gym</span>
-      </div>
-      <div class="links" style="margin-top:12px;">
-        <a href="#">GitHub</a>
-        <a href="#">Video</a>
+      <div class="project-inner">
+        <div class="project-media">
+          <!-- Put your image in: images/leg_joints.jpg -->
+          <img src="images/leg_joints.jpg" alt="Compliant leg joints project figure">
+        </div>
+
+        <div class="project-content">
+          <h2>Compliant Leg Joints for Humanoid Locomotion</h2>
+
+          <p>
+            <strong>Problem:</strong> Humanoid locomotion is sensitive to impacts and ground uncertainty.<br>
+            <strong>Contribution:</strong> Implemented compliant leg joints with <strong>parallel</strong> and <strong>series</strong> elasticity and integrated them into an end-to-end simulation pipeline.<br>
+            <strong>Outcome:</strong> Evaluated stability, impact absorption, and robustness using learning-based testing in <strong>Isaac Gym</strong>.
+          </p>
+
+          <div class="tagrow">
+            <span class="tag">Humanoids</span>
+            <span class="tag">Locomotion</span>
+            <span class="tag">Compliance</span>
+            <span class="tag">Isaac Gym</span>
+            <span class="tag">RL Evaluation</span>
+          </div>
+
+          <div class="links">
+            <a href="PUT_GITHUB_LINK_HERE" target="_blank" rel="noopener">GitHub</a>
+            <a href="PUT_VIDEO_LINK_HERE" target="_blank" rel="noopener">Video</a>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- PROJECT 2 -->
     <div class="project">
-      <h2>Adaptive Robotic Feet for Dynamic Locomotion</h2>
-      <div>
-        End-to-end design and experimental validation of adaptive robotic feet enabling improved landing stability during dynamic locomotion,
-        integrating compliant structures, pneumatic actuation, and embedded sensing.
-      </div>
-      <div>
-        <span class="tag">Soft robotics</span><span class="tag">Pneumatics</span><span class="tag">Experiments</span>
-      </div>
-      <div class="links" style="margin-top:12px;">
-        <a href="#">Video</a>
+      <div class="project-inner">
+        <div class="project-media">
+          <!-- Put your image in: images/adaptive_feet.jpg -->
+          <img src="images/adaptive_feet.jpg" alt="Adaptive robotic feet project figure">
+        </div>
+
+        <div class="project-content">
+          <h2>Adaptive Robotic Feet for Dynamic Locomotion</h2>
+
+          <p>
+            <strong>Problem:</strong> Rigid feet limit stability during dynamic locomotion and uneven terrain contact.<br>
+            <strong>Contribution:</strong> Designed and experimentally validated <strong>pneumatically actuated</strong> soft feet with compliant structures and sensing.<br>
+            <strong>Outcome:</strong> Improved landing robustness and physical interaction behavior in real humanoid experiments.
+          </p>
+
+          <div class="tagrow">
+            <span class="tag">Soft Robotics</span>
+            <span class="tag">Pneumatics</span>
+            <span class="tag">Physical Interaction</span>
+            <span class="tag">Experiments</span>
+          </div>
+
+          <div class="links">
+            <a href="PUT_VIDEO_LINK_HERE" target="_blank" rel="noopener">Video</a>
+            <a href="PUT_PAPER_LINK_HERE" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- PROJECT 3 -->
     <div class="project">
-      <h2>RGB-D Terrain Perception for Robotic Locomotion</h2>
-      <div>
-        Real-time RGB-D perception pipeline for terrain exploration and adaptive foot placement, focused on robust perception-to-action integration
-        in unstructured environments.
-      </div>
-      <div>
-        <span class="tag">Perception</span><span class="tag">RGB-D</span><span class="tag">Integration</span>
-      </div>
-      <div class="links" style="margin-top:12px;">
-        <a href="#">Video</a>
+      <div class="project-inner">
+        <div class="project-media">
+          <!-- Put your image in: images/terrain_scanning.jpg -->
+          <img src="images/terrain_scanning.jpg" alt="RGB-D terrain perception project figure">
+        </div>
+
+        <div class="project-content">
+          <h2>RGB-D Terrain Perception for Robust Foot Placement</h2>
+
+          <p>
+            <strong>Problem:</strong> Robust walking requires reliable foothold selection under uncertain terrain geometry.<br>
+            <strong>Contribution:</strong> Built a real-time <strong>RGB-D ground scanning</strong> pipeline for terrain analysis and foothold planning.<br>
+            <strong>Outcome:</strong> Enabled perception-to-action integration for adaptive foot placement in unstructured environments.
+          </p>
+
+          <div class="tagrow">
+            <span class="tag">Perception</span>
+            <span class="tag">RGB-D</span>
+            <span class="tag">Foothold Planning</span>
+            <span class="tag">Integration</span>
+          </div>
+
+          <div class="links">
+            <a href="PUT_VIDEO_LINK_HERE" target="_blank" rel="noopener">Video</a>
+            <a href="PUT_PAPER_LINK_HERE" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- PROJECT 4 -->
     <div class="project">
-      <h2>Tunable-Stiffness Actuation for Robotics</h2>
-      <div>
-        Developed and characterized a tunable-stiffness actuator with modeling and experimental validation,
-        analyzing stiffness modulation, response time, and repeatability.
-      </div>
-      <div>
-        <span class="tag">Actuators</span><span class="tag">System ID</span><span class="tag">Hardware</span>
-      </div>
-      <div class="links" style="margin-top:12px;">
-        <a href="#">Video</a>
+      <div class="project-inner">
+        <div class="project-media">
+          <!-- Put your image in: images/tunable_actuator.jpg -->
+          <img src="images/tunable_actuator.jpg" alt="Tunable stiffness actuation project figure">
+        </div>
+
+        <div class="project-content">
+          <h2>Tunable-Stiffness Actuation & Characterization</h2>
+
+          <p>
+            <strong>Problem:</strong> Fixed-stiffness actuation limits adaptability in contact-rich robotic interaction.<br>
+            <strong>Contribution:</strong> Developed and characterized a tunable-stiffness actuator with modeling and experimental validation.<br>
+            <strong>Outcome:</strong> Quantified stiffness modulation range, response time, and repeatability for design decisions.
+          </p>
+
+          <div class="tagrow">
+            <span class="tag">Actuators</span>
+            <span class="tag">Modeling</span>
+            <span class="tag">System ID</span>
+            <span class="tag">Hardware</span>
+          </div>
+
+          <div class="links">
+            <a href="PUT_VIDEO_LINK_HERE" target="_blank" rel="noopener">Video</a>
+            <a href="PUT_PAPER_LINK_HERE" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 </body>
 </html>
