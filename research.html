@@ -1,99 +1,171 @@
-<div class="container">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="experience.html">Experience</a>
-    <a href="skills.html">Skills</a>
-    <a href="cv.html">CV</a>
-  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Research — Irene Frizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <h1>Research</h1>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5; /* SAME as Home */
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
 
-  <div class="block">
-    <strong>Research focus</strong>
-    <ul>
-      <li>Humanoid locomotion and stability under contact-rich interaction</li>
-      <li>Compliant mechanisms (soft feet and leg joints) and variable impedance control</li>
-      <li>Simulation-driven development using Isaac Gym and MuJoCo</li>
-      <li>Learning-based methods for locomotion analysis and robustness evaluation</li>
-    </ul>
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 20px;
+    }
+
+    .block {
+      margin-top: 28px;
+      padding: 24px 26px;
+      background: rgba(255,255,255,0.35);
+      border-radius: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <h1>Research</h1>
+
+    <!-- Top grid: focus + recognition -->
+    <div class="grid">
+      <div class="block">
+        <strong>Research focus</strong>
+        <ul>
+          <li>Humanoid locomotion and stability under contact-rich interaction</li>
+          <li>Compliant mechanisms (soft feet and leg joints)</li>
+          <li>Variable impedance and adaptive compliance</li>
+          <li>Simulation-driven development (Isaac Gym, MuJoCo)</li>
+          <li>Learning-based analysis for robustness and impact handling</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <strong>Recognition</strong>
+        <ul>
+          <li><strong>JSPS Postdoctoral Fellowship</strong> (Japan Society for the Promotion of Science)</li>
+          <li>Kanako Miura Award — IEEE-RAS Humanoids (2022)</li>
+          <li>Invited Speaker — ICRA 2024 Workshop on Anthropomorphic & Zoomorphic End-Effectors</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Journal papers -->
+    <div class="block">
+      <strong>Journal publications</strong>
+      <ul>
+        <li>
+          <strong>Frizza, I.</strong>, Kaminaga, H., Cisneros-Limon, R., Fraisse, P., Venture, G. (2025).  
+          <em>Enhancing humanoid robot stability on uneven terrain with online foothold planning based on ground scanning.</em>  
+          Journal of Intelligent & Robotic Systems, Springer.
+        </li>
+        <li>
+          <strong>Frizza, I.</strong>, Kaminaga, H., Fraisse, P., Venture, G. (2025).  
+          <em>Compliant Pneumatic Feet with Real-Time Stiffness Adaptation for Humanoid Locomotion.</em>  
+          Advanced Robotics Research.
+        </li>
+        <li>
+          <strong>Frizza, I.</strong>, Kaminaga, H., Fraisse, P., Venture, G. (2025).  
+          <em>Design and Validation of a Soft Pneumatic Submodule for Adaptive Humanoid Foot Compliance.</em>  
+          Machines.
+        </li>
+        <li>
+          <strong>Frizza, I.</strong>, Ayusawa, K., Cherubini, A., Kaminaga, H., Fraisse, P., Venture, G. (2022).  
+          <em>Humanoids’ feet: State-of-the-art and future directions.</em>  
+          International Journal of Humanoid Robotics.
+        </li>
+        <li>
+          Catalano, M. G., <strong>Frizza, I.</strong>, Morandi, C., Grioli, G., Ayusawa, K., Ito, T., Venture, G. (2020).  
+          <em>HRP-4 walks on soft feet.</em>  
+          IEEE Robotics and Automation Letters.
+        </li>
+        <li>
+          Mura, D., Della Santina, C., Piazza, C., <strong>Frizza, I.</strong>, Morandi, C., Garabini, M., Grioli, G., Catalano, M. G. (2019).  
+          <em>Exploiting adaptability in soft feet for sensing contact forces.</em>  
+          IEEE Robotics and Automation Letters.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Conference papers -->
+    <div class="block">
+      <strong>Conference publications</strong>
+      <ul>
+        <li>
+          <strong>Frizza, I.</strong>, Kaminaga, H., Ayusawa, K., Fraisse, P., Venture, G. (2021).  
+          <em>A study on locomotion performance of humanoid robot with soft feet.</em>  
+          Robotics Society of Japan Conference (International Session).
+        </li>
+        <li>
+          <strong>Frizza, I.</strong>, Kaminaga, H., Ayusawa, K., Fraisse, P., Venture, G. (2022).  
+          <em>Benefits of variable stiffness feet for humanoid walking on rough terrains.</em>  
+          IEEE-RAS International Conference on Humanoid Robots.
+        </li>
+        <li>
+          <strong>Frizza, I.</strong>, Austin, M., Nakajima, K.  
+          <em>Compliant leg joints for humanoids: Parallel vs. series elasticity in RL-based locomotion.</em>  
+          IEEE/RSJ International Conference on Intelligent Robots and Systems (under review).
+        </li>
+      </ul>
+    </div>
+
   </div>
-
-  <div class="block">
-    <strong>Journal publications</strong>
-    <ul>
-      <li>
-        <strong>Frizza, I.</strong>, Kaminaga, H., Cisneros-Limon, R., Fraisse, P., Venture, G. (2025).  
-        <em>Enhancing humanoid robot stability on uneven terrain with online foothold planning based on ground scanning.</em>  
-        Journal of Intelligent & Robotic Systems, Springer.
-      </li>
-      <li>
-        <strong>Frizza, I.</strong>, Kaminaga, H., Fraisse, P., Venture, G. (2025).  
-        <em>Compliant Pneumatic Feet with Real-Time Stiffness Adaptation for Humanoid Locomotion.</em>  
-        Advanced Robotics Research.
-      </li>
-      <li>
-        <strong>Frizza, I.</strong>, Kaminaga, H., Fraisse, P., Venture, G. (2025).  
-        <em>Design and Validation of a Soft Pneumatic Submodule for Adaptive Humanoid Foot Compliance.</em>  
-        Machines.
-      </li>
-      <li>
-        <strong>Frizza, I.</strong>, Ayusawa, K., Cherubini, A., Kaminaga, H., Fraisse, P., Venture, G. (2022).  
-        <em>Humanoids’ feet: State-of-the-art and future directions.</em>  
-        International Journal of Humanoid Robotics.
-      </li>
-      <li>
-        Catalano, M. G., <strong>Frizza, I.</strong>, Morandi, C., Grioli, G., Ayusawa, K., Ito, T., Venture, G. (2020).  
-        <em>HRP-4 walks on soft feet.</em>  
-        IEEE Robotics and Automation Letters.
-      </li>
-      <li>
-        Mura, D., Della Santina, C., Piazza, C., <strong>Frizza, I.</strong>, Morandi, C., Garabini, M., Grioli, G., Catalano, M. G. (2019).  
-        <em>Exploiting adaptability in soft feet for sensing contact forces.</em>  
-        IEEE Robotics and Automation Letters.
-      </li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <strong>Conference publications</strong>
-    <ul>
-      <li>
-        <strong>Frizza, I.</strong>, Kaminaga, H., Ayusawa, K., Fraisse, P., Venture, G. (2021).  
-        <em>A study on locomotion performance of humanoid robot with soft feet.</em>  
-        Robotics Society of Japan Conference (International Session).
-      </li>
-      <li>
-        <strong>Frizza, I.</strong>, Kaminaga, H., Ayusawa, K., Fraisse, P., Venture, G. (2022).  
-        <em>Benefits of variable stiffness feet for humanoid walking on rough terrains.</em>  
-        IEEE-RAS International Conference on Humanoid Robots.
-      </li>
-      <li>
-        <strong>Frizza, I.</strong>, Austin, M., Nakajima, K.  
-        <em>Compliant leg joints for humanoids: Parallel vs. series elasticity in RL-based locomotion.</em>  
-        IEEE/RSJ International Conference on Intelligent Robots and Systems (under review).
-      </li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <strong>Invited talks</strong>
-    <ul>
-      <li>
-        IEEE International Conference on Robotics and Automation (ICRA), 2024 — Workshop on
-        <em>Anthropomorphic and Zoomorphic End-Effectors</em>.  
-        Presentation: <em>Designing Feet for Humanoid Robots</em>.
-      </li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <strong>Awards & fellowships</strong>
-    <ul>
-      <li>JSPS Postdoctoral Fellowship (Japan Society for the Promotion of Science)</li>
-      <li>Kanako Miura Award — IEEE-RAS International Conference on Humanoid Robots (2022)</li>
-    </ul>
-  </div>
-
-</div>
+</body>
+</html>
