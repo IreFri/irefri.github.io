@@ -8,28 +8,27 @@
   <style>
     body {
       font-family: "Times New Roman", Times, serif;
-      background-color: #eef4fb; /* light blue */
+      background-color: #eef4fb; /* light blue everywhere */
       margin: 0;
       padding: 0;
       color: #1f1f1f;
     }
 
     .container {
-      max-width: 950px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 50px 25px;
-      background-color: #ffffff;
+      padding: 50px 25px 70px;
     }
 
     nav {
       margin-bottom: 40px;
+      font-size: 1.12em;
     }
 
     nav a {
       margin-right: 18px;
       text-decoration: none;
       color: #004a99;
-      font-size: 1.05em;
     }
 
     nav a:hover {
@@ -37,13 +36,13 @@
     }
 
     h1 {
-      font-size: 2.6em;
-      margin-bottom: 0.2em;
+      font-size: 2.8em;
+      margin-bottom: 0.15em;
     }
 
     .subtitle {
-      font-size: 1.3em;
-      margin-bottom: 25px;
+      font-size: 1.35em;
+      margin-bottom: 22px;
     }
 
     .hero {
@@ -55,11 +54,11 @@
 
     .hero-text {
       flex: 2;
-      font-size: 1.15em;
+      font-size: 1.18em;
     }
 
     .hero-text p {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     .hero-image {
@@ -68,67 +67,82 @@
     }
 
     .hero-image img {
-      max-width: 220px;
-      border-radius: 8px;
+      max-width: 300px;  /* bigger image */
+      width: 100%;
+      border-radius: 10px;
     }
 
-    .video-placeholder {
-      margin-top: 50px;
-      padding: 35px;
-      border: 1px dashed #999;
-      text-align: center;
-      font-style: italic;
-      color: #666;
+    .card {
+      margin-top: 40px;
+      padding: 22px 24px;
+      background: rgba(255,255,255,0.35); /* subtle, not a big white block */
+      border-radius: 12px;
+    }
+
+    .buttonrow a {
+      display: inline-block;
+      margin-right: 14px;
+      margin-top: 10px;
+      color: #004a99;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .buttonrow a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV</a>
+    </nav>
 
-<div class="container">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Irene Frizza</h1>
+        <div class="subtitle">
+          <strong>Research Engineer developing robust locomotion and control systems for humanoid robots</strong>
+        </div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="projects.html">Projects</a>
-  <a href="research.html">Research</a>
-  <a href="experience.html">Experience</a>
-  <a href="skills.html">Skills</a>
-  <a href="cv.html">CV</a>
-</nav>
+        <p>
+          I design and study locomotion and control systems for humanoid robots, with a focus on robustness,
+          physical interaction, and contact-rich behaviors.
+        </p>
 
-<div class="hero">
-  <div class="hero-text">
-    <h1>Irene Frizza</h1>
-    <div class="subtitle">
-      <strong>Research Engineer developing robust locomotion and control systems for humanoid robots</strong>
+        <p>
+          My work combines physics-based simulation, control design, and reinforcement learning to analyze
+          and improve stability, impact handling, and adaptability on uneven terrain.
+        </p>
+
+        <p>
+          I have experience building full simulation-to-control pipelines and working across software,
+          control, and hardware-oriented robotics projects.
+        </p>
+
+        <div class="buttonrow">
+          <a href="projects.html">Projects →</a>
+          <a href="cv.html">CV →</a>
+          <a href="cv.html#contact">Contact →</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Irene Frizza">
+      </div>
     </div>
 
-    <p>
-      I design and study locomotion and control systems for humanoid robots, with a focus on robustness,
-      physical interaction, and contact-rich behaviors.
-    </p>
-
-    <p>
-      My work combines physics-based simulation, control design, and reinforcement learning to analyze
-      and improve stability, impact handling, and adaptability on uneven terrain.
-    </p>
-
-    <p>
-      I have experience building full simulation-to-control pipelines and working across software,
-      control, and hardware-oriented robotics projects.
-    </p>
+    <div class="card">
+      <strong>Featured demo</strong><br>
+      Next: we’ll embed your walking / push-recovery video here.
+    </div>
   </div>
-
-  <div class="hero-image">
-    <img src="Photo IRENE.jpg" alt="Irene Frizza">
-  </div>
-</div>
-
-<div class="video-placeholder">
-  Video placeholder — humanoid walking / push recovery demo will go here
-</div>
-
-</div>
-
 </body>
 </html>
