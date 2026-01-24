@@ -4,19 +4,80 @@
   <meta charset="utf-8">
   <title>Skills — Irene Frizza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body{font-family:"Times New Roman",Times,serif;background:#eef4fb;margin:0;color:#1f1f1f}
-    .container{max-width:980px;margin:0 auto;padding:50px 25px 70px}
-    nav{margin-bottom:35px;font-size:1.12em}
-    nav a{margin-right:18px;text-decoration:none;color:#004a99}
-    nav a:hover{text-decoration:underline}
-    h1{font-size:2.4em;margin:0 0 10px}
-    .block{margin-top:22px;padding:22px 24px;background:rgba(255,255,255,0.35);border-radius:12px}
-    ul{margin:10px 0 0 22px}
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5;
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin: 0 0 18px;
+    }
+
+    .note {
+      max-width: 880px;
+      font-size: 1.12em;
+      line-height: 1.55;
+      margin-bottom: 30px;
+    }
+
+    .skill-block {
+      margin-top: 26px;
+      padding: 22px;
+      border-radius: 14px;
+      border: 2px solid rgba(0, 74, 153, 0.14);
+      background: transparent;
+    }
+
+    .skill-title {
+      font-size: 1.25em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 8px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    strong {
+      color: #003a7a;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
+
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -28,45 +89,63 @@
 
     <h1>Skills</h1>
 
-    <div class="block">
-      <strong>Programming</strong>
+    <div class="note">
+      Technical skills focused on building, testing, and deploying
+      <strong>locomotion and physical-interaction systems</strong> for humanoid robots,
+      spanning <strong>software</strong>, <strong>control</strong>, <strong>simulation</strong>,
+      and <strong>hardware</strong>.
+    </div>
+
+    <!-- SOFTWARE -->
+    <div class="skill-block">
+      <div class="skill-title"><strong>Software & Robotics Engineering</strong></div>
       <ul>
-        <li>Python, C/C++, MATLAB</li>
-        <li>Real-time / embedded codebases</li>
+        <li><strong>Python</strong>, <strong>C/C++</strong>, MATLAB for robotics pipelines and tooling</li>
+        <li>Development of <strong>real-time</strong> and performance-critical codebases</li>
+        <li>Debugging, profiling, and integration of large robotics software stacks</li>
       </ul>
     </div>
 
-    <div class="block">
-      <strong>Robotics & Simulation</strong>
+    <!-- SIMULATION -->
+    <div class="skill-block">
+      <div class="skill-title"><strong>Simulation & Robot Modeling</strong></div>
       <ul>
-        <li>Isaac Gym, MuJoCo, ROS, Gazebo, URDF</li>
-        <li>Rigid-body dynamics, kinematics</li>
+        <li><strong>Isaac Gym</strong>, <strong>MuJoCo</strong> for large-scale locomotion evaluation</li>
+        <li><strong>ROS</strong>, Gazebo, URDF for system integration and testing</li>
+        <li>Rigid-body dynamics, kinematics, and contact modeling</li>
       </ul>
     </div>
 
-    <div class="block">
-      <strong>Control & Learning</strong>
+    <!-- CONTROL -->
+    <div class="skill-block">
+      <div class="skill-title"><strong>Control, Optimization & Learning</strong></div>
       <ul>
-        <li>Reinforcement learning, model-based control, impedance control</li>
-        <li>Trajectory optimization</li>
+        <li><strong>Impedance</strong>, <strong>admittance</strong>, and model-based control</li>
+        <li><strong>Reinforcement learning</strong> (PPO) as a tool for robustness analysis and policy optimization</li>
+        <li>Trajectory optimization and stability evaluation under disturbances</li>
       </ul>
     </div>
 
-    <div class="block">
-      <strong>Actuation & Physical Interaction</strong>
+    <!-- PHYSICAL INTERACTION -->
+    <div class="skill-block">
+      <div class="skill-title"><strong>Physical Interaction & Actuation</strong></div>
       <ul>
-        <li>Variable-stiffness mechanisms, pneumatic actuation</li>
-        <li>System identification, sensor fusion</li>
+        <li><strong>Compliant mechanisms</strong>, variable-stiffness actuation</li>
+        <li><strong>Pneumatic systems</strong>, pressure control, valve integration</li>
+        <li>System identification and sensor-driven feedback control</li>
       </ul>
     </div>
 
-    <div class="block">
-      <strong>Hardware & Prototyping</strong>
+    <!-- HARDWARE -->
+    <div class="skill-block">
+      <div class="skill-title"><strong>Hardware & Prototyping</strong></div>
       <ul>
-        <li>Pneumatic systems, embedded sensing, Arduino</li>
-        <li>3D printing, machining</li>
+        <li>Integration of <strong>embedded sensors</strong> and actuation hardware</li>
+        <li>Rapid prototyping: <strong>3D printing</strong>, basic machining, assembly</li>
+        <li>Experimental setup, data collection, and validation on real robotic platforms</li>
       </ul>
     </div>
+
   </div>
 </body>
 </html>
