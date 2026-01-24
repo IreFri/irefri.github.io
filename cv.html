@@ -4,20 +4,90 @@
   <meta charset="utf-8">
   <title>CV — Irene Frizza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body{font-family:"Times New Roman",Times,serif;background:#eef4fb;margin:0;color:#1f1f1f}
-    .container{max-width:980px;margin:0 auto;padding:50px 25px 70px}
-    nav{margin-bottom:35px;font-size:1.12em}
-    nav a{margin-right:18px;text-decoration:none;color:#004a99}
-    nav a:hover{text-decoration:underline}
-    h1{font-size:2.4em;margin:0 0 10px}
-    .block{margin-top:22px;padding:22px 24px;background:rgba(255,255,255,0.35);border-radius:12px}
-    a{color:#004a99;text-decoration:none;font-weight:600}
-    a:hover{text-decoration:underline}
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5;
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-top: 30px;
+      padding: 24px;
+      border-radius: 14px;
+      border: 2px solid rgba(0, 74, 153, 0.14);
+      background: transparent;
+    }
+
+    .download-box {
+      text-align: center;
+      font-size: 1.15em;
+    }
+
+    .download-box a {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 26px;
+      border-radius: 999px;
+      background: rgba(0, 74, 153, 0.12);
+      color: #003a7a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .download-box a:hover {
+      background: rgba(0, 74, 153, 0.18);
+    }
+
+    .contact {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    .contact a {
+      color: #004a99;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
+
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -27,20 +97,31 @@
       <a href="cv.html">CV</a>
     </nav>
 
-    <h1>CV</h1>
+    <h1>Curriculum Vitae</h1>
 
-    <div class="block">
-      <strong>Download</strong><br><br>
-      Upload your PDF CV into this repository (for example as <code>Irene_Frizza_Resume.pdf</code>) and link it here.<br><br>
-      <a href="Irene_Frizza_Resume.pdf">Download CV (PDF)</a>
+    <!-- DOWNLOAD -->
+    <div class="section download-box">
+      <strong>Download CV</strong><br>
+      <span style="font-size:0.95em;">
+        Full academic and professional resume (PDF)
+      </span><br>
+      <a href="Irene_Frizza_Resume.pdf" target="_blank" rel="noopener">
+        Download Irene_Frizza_Resume.pdf
+      </a>
     </div>
 
-    <div class="block" id="contact">
+    <!-- CONTACT -->
+    <div class="section contact" id="contact">
       <strong>Contact</strong><br><br>
-      Email: irenefrizza@gmail.com<br>
-      LinkedIn: <a href="#">(add your link)</a><br>
-      GitHub: <a href="https://github.com/IreFri">github.com/IreFri</a>
+      Email: <a href="mailto:irenefrizza@gmail.com">irenefrizza@gmail.com</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK-HERE" target="_blank" rel="noopener">
+        linkedin.com/in/irenefrizza
+      </a><br>
+      GitHub: <a href="https://github.com/IreFri" target="_blank" rel="noopener">
+        github.com/IreFri
+      </a>
     </div>
+
   </div>
 </body>
 </html>
