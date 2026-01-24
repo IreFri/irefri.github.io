@@ -4,20 +4,86 @@
   <meta charset="utf-8">
   <title>Experience — Irene Frizza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body{font-family:"Times New Roman",Times,serif;background:#eef4fb;margin:0;color:#1f1f1f}
-    .container{max-width:980px;margin:0 auto;padding:50px 25px 70px}
-    nav{margin-bottom:35px;font-size:1.12em}
-    nav a{margin-right:18px;text-decoration:none;color:#004a99}
-    nav a:hover{text-decoration:underline}
-    h1{font-size:2.4em;margin:0 0 10px}
-    .role{margin-top:22px;padding:22px 24px;background:rgba(255,255,255,0.35);border-radius:12px}
-    .role strong{font-size:1.15em}
-    ul{margin:10px 0 0 22px}
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5;
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin: 0 0 18px;
+    }
+
+    .note {
+      max-width: 880px;
+      font-size: 1.12em;
+      line-height: 1.55;
+      margin-bottom: 30px;
+    }
+
+    .role {
+      margin-top: 26px;
+      padding: 22px;
+      border-radius: 14px;
+      border: 2px solid rgba(0, 74, 153, 0.14);
+      background: transparent;
+    }
+
+    .role-title {
+      font-size: 1.25em;
+      margin-bottom: 6px;
+    }
+
+    .role-meta {
+      font-size: 0.95em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    strong {
+      color: #003a7a;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
+
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -29,43 +95,115 @@
 
     <h1>Experience</h1>
 
+    <div class="note">
+      Experience spanning <strong>robotics research and engineering</strong>, with a focus on
+      <strong>locomotion systems</strong>, <strong>compliant mechanisms</strong>, and
+      <strong>simulation-to-hardware pipelines</strong> for humanoid robots.
+    </div>
+
+    <!-- ROLE 1 -->
     <div class="role">
-      <strong>The University of Tokyo — Postdoctoral Researcher (JSPS Fellow)</strong> (2024–Present)
+      <div class="role-title">
+        <strong>The University of Tokyo</strong> — Postdoctoral Researcher (JSPS Fellow)
+      </div>
+      <div class="role-meta">2024 – Present</div>
       <ul>
-        <li>Developed simulation and control frameworks for soft robotic joints in Isaac Gym.</li>
-        <li>Built reinforcement-learning (PPO) pipelines for uneven-terrain locomotion and push-recovery evaluation.</li>
+        <li>
+          Designed and implemented <strong>compliant joint models</strong> for humanoid robots,
+          integrated into large-scale <strong>physics-based simulation</strong> environments.
+        </li>
+        <li>
+          Built <strong>control and evaluation pipelines</strong> in Isaac Gym to assess
+          <strong>locomotion robustness</strong>, <strong>impact response</strong>, and
+          <strong>push recovery</strong>.
+        </li>
+        <li>
+          Used <strong>reinforcement learning</strong> as an engineering tool to
+          stress-test control strategies under <strong>terrain uncertainty</strong> and disturbances.
+        </li>
       </ul>
     </div>
 
+    <!-- ROLE 2 -->
     <div class="role">
-      <strong>AIST (JRL) — Engineer (Moonshot Robotics Project)</strong> (2024)
+      <div class="role-title">
+        <strong>AIST – Joint Robotics Laboratory</strong> — Robotics Engineer (Moonshot Project)
+      </div>
+      <div class="role-meta">2024</div>
       <ul>
-        <li>Developed embedded control software (PID) and pneumatic actuation modules (valves, compliant air chambers).</li>
-        <li>Integrated MoCap-based feedback into control loops.</li>
+        <li>
+          Developed <strong>embedded control software</strong> for pneumatic actuation systems,
+          including valve control and pressure regulation.
+        </li>
+        <li>
+          Integrated <strong>motion-capture feedback</strong> into real-time control loops
+          for closed-loop evaluation.
+        </li>
+        <li>
+          Contributed to system-level integration of <strong>soft robotic components</strong>
+          within a large-scale humanoid research platform.
+        </li>
       </ul>
     </div>
 
+    <!-- ROLE 3 -->
     <div class="role">
-      <strong>AIST (JRL) — Research Assistant</strong> (2021–2023)
+      <div class="role-title">
+        <strong>AIST – Joint Robotics Laboratory</strong> — Research Assistant
+      </div>
+      <div class="role-meta">2021 – 2023</div>
       <ul>
-        <li>Designed and manufactured compliant pneumatic feet with embedded sensing.</li>
-        <li>Integrated system on HRP-4CR humanoid robot and conducted locomotion experiments.</li>
+        <li>
+          Designed and manufactured <strong>pneumatically actuated soft feet</strong> with
+          embedded sensing for humanoid robots.
+        </li>
+        <li>
+          Integrated hardware on the <strong>HRP-4CR humanoid</strong> and conducted
+          <strong>locomotion and contact experiments</strong>.
+        </li>
+        <li>
+          Evaluated performance in terms of <strong>stability</strong>,
+          <strong>impact absorption</strong>, and repeatability.
+        </li>
       </ul>
     </div>
 
+    <!-- ROLE 4 -->
     <div class="role">
-      <strong>LIRMM (CNRS) — Researcher</strong> (2020)
+      <div class="role-title">
+        <strong>LIRMM (CNRS)</strong> — Research Engineer
+      </div>
+      <div class="role-meta">2020</div>
       <ul>
-        <li>Built MuJoCo simulation tools to evaluate variable-stiffness mechanisms and multi-contact behavior.</li>
+        <li>
+          Developed <strong>MuJoCo simulation tools</strong> to study
+          <strong>variable-stiffness mechanisms</strong> and
+          <strong>multi-contact interaction</strong>.
+        </li>
+        <li>
+          Supported design decisions through <strong>simulation-based analysis</strong>
+          of compliant robotic systems.
+        </li>
       </ul>
     </div>
 
+    <!-- ROLE 5 -->
     <div class="role">
-      <strong>Tokyo Univ. of Agriculture & Technology — Research Intern</strong> (2019)
+      <div class="role-title">
+        <strong>Tokyo University of Agriculture and Technology</strong> — Research Intern
+      </div>
+      <div class="role-meta">2019</div>
       <ul>
-        <li>Gait analysis using motion-capture and force-plate systems for compliant-foot controller development.</li>
+        <li>
+          Performed <strong>gait analysis</strong> using motion capture and force plates
+          to inform <strong>compliant foot controller design</strong>.
+        </li>
+        <li>
+          Analyzed human and robot walking data to extract contact and stability metrics.
+        </li>
       </ul>
     </div>
+
   </div>
 </body>
 </html>
