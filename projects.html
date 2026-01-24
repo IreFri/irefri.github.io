@@ -43,17 +43,16 @@
     .note {
       font-size: 1.12em;
       margin-bottom: 28px;
-      max-width: 860px;
-      line-height: 1.5;
+      max-width: 880px;
+      line-height: 1.55;
     }
 
-    /* project block: NO white rectangle; keep separation with subtle border */
     .project {
       margin-top: 26px;
       padding: 22px;
       border-radius: 14px;
       border: 2px solid rgba(0, 74, 153, 0.14);
-      background: transparent; /* important: no white card */
+      background: transparent;
     }
 
     .project-inner {
@@ -87,7 +86,7 @@
 
     .project p {
       margin: 0 0 10px;
-      line-height: 1.55;
+      line-height: 1.6;
       font-size: 1.08em;
     }
 
@@ -123,9 +122,7 @@
     }
 
     @media (max-width: 700px) {
-      .project-media {
-        max-width: 100%;
-      }
+      .project-media { max-width: 100%; }
     }
   </style>
 </head>
@@ -142,39 +139,41 @@
     </nav>
 
     <h1>Projects</h1>
+
     <div class="note">
-      Selected projects showing how I design, analyze, and validate humanoid locomotion and physical-interaction systems —
-      from compliant hardware to control and learning-based evaluation.
+      <strong>Selected projects</strong> (not exhaustive) demonstrating how I build and validate
+      <strong>robust locomotion</strong> and <strong>physical-interaction systems</strong> for humanoid robots —
+      spanning <strong>control</strong>, <strong>simulation</strong>, <strong>hardware prototyping</strong>, and <strong>real-world experiments</strong>.
     </div>
 
     <!-- PROJECT 1 -->
     <div class="project">
       <div class="project-inner">
         <div class="project-media">
-          <!-- Put your image in: images/leg_joints.jpg -->
           <img src="images/leg_joints.png" alt="Compliant leg joints project figure">
         </div>
 
         <div class="project-content">
-          <h2>Compliant Leg Joints for Humanoid Locomotion</h2>
+          <h2>Compliant Leg Joints for Robust Humanoid Locomotion</h2>
 
           <p>
-            <strong>Problem:</strong> Humanoid locomotion is sensitive to impacts and ground uncertainty.<br>
-            <strong>Contribution:</strong> Implemented compliant leg joints with <strong>parallel</strong> and <strong>series</strong> elasticity and integrated them into an end-to-end simulation pipeline.<br>
-            <strong>Outcome:</strong> Evaluated stability, impact absorption, and robustness using learning-based testing in <strong>Isaac Gym</strong>.
+            <strong>Goal:</strong> Improve robustness to <strong>impacts</strong> and <strong>terrain uncertainty</strong> during humanoid locomotion.<br>
+            <strong>What I built:</strong> A compliant joint model with <strong>parallel</strong> and <strong>series</strong> elasticity integrated into a full simulation pipeline.<br>
+            <strong>How it was validated:</strong> Stress-tested stability and recovery using <strong>learning-based testing</strong> in <strong>Isaac Gym</strong> (large-scale rollouts and perturbations).
           </p>
 
           <div class="tagrow">
             <span class="tag">Humanoids</span>
-            <span class="tag">Locomotion</span>
+            <span class="tag">Control</span>
             <span class="tag">Compliance</span>
+            <span class="tag">Simulation</span>
             <span class="tag">Isaac Gym</span>
-            <span class="tag">RL Evaluation</span>
           </div>
 
           <div class="links">
             <a href="https://github.com/IreFri/unitree_rl_gym_soft_joints/tree/main" target="_blank" rel="noopener">GitHub</a>
             <a href="https://drive.google.com/file/d/1L3Mpu1KTA6RxJU5HPF-yZxO5Au3a9a3y/view" target="_blank" rel="noopener">Video</a>
+            <a href="project_leg_joints.html">Details</a>
           </div>
         </div>
       </div>
@@ -184,29 +183,30 @@
     <div class="project">
       <div class="project-inner">
         <div class="project-media">
-          <!-- Put your image in: images/adaptive_feet.jpg -->
           <img src="images/soft_foot.png" alt="Adaptive robotic feet project figure">
         </div>
 
         <div class="project-content">
-          <h2>Adaptive Robotic Feet for Dynamic Locomotion</h2>
+          <h2>Adaptive Soft Feet for Stable Landing and Terrain Interaction</h2>
 
           <p>
-            <strong>Problem:</strong> Rigid feet limit stability during dynamic locomotion and uneven terrain contact.<br>
-            <strong>Contribution:</strong> Designed and experimentally validated <strong>pneumatically actuated</strong> soft feet with compliant structures and sensing.<br>
-            <strong>Outcome:</strong> Improved landing robustness and physical interaction behavior in real humanoid experiments.
+            <strong>Goal:</strong> Increase <strong>landing stability</strong> and reduce impact sensitivity during dynamic locomotion.<br>
+            <strong>What I built:</strong> Pneumatically actuated soft feet with <strong>tunable stiffness</strong>, compliant structure, and sensing for contact-aware behavior.<br>
+            <strong>How it was validated:</strong> Experimental evaluation on humanoid setups focusing on <strong>stability</strong>, <strong>contact behavior</strong>, and repeatability.
           </p>
 
           <div class="tagrow">
             <span class="tag">Soft Robotics</span>
+            <span class="tag">Mechanism Design</span>
             <span class="tag">Pneumatics</span>
-            <span class="tag">Physical Interaction</span>
+            <span class="tag">Control</span>
             <span class="tag">Experiments</span>
           </div>
 
           <div class="links">
             <a href="https://drive.google.com/file/d/1fQononGS5qgtP_7HbYMnC6fAzg2U9fYS/view" target="_blank" rel="noopener">Video</a>
             <a href="PUT_PAPER_LINK_HERE" target="_blank" rel="noopener">Paper</a>
+            <a href="project_soft_feet.html">Details</a>
           </div>
         </div>
       </div>
@@ -216,22 +216,22 @@
     <div class="project">
       <div class="project-inner">
         <div class="project-media">
-          <!-- Put your image in: images/terrain_scanning.jpg -->
           <img src="images/terrain_scanning.png" alt="RGB-D terrain perception project figure">
         </div>
 
         <div class="project-content">
-          <h2>RGB-D Terrain Perception for Robust Foot Placement</h2>
+          <h2>RGB-D Terrain Scanning for Foothold Planning</h2>
 
           <p>
-            <strong>Problem:</strong> Robust walking requires reliable foothold selection under uncertain terrain geometry.<br>
-            <strong>Contribution:</strong> Built a real-time <strong>RGB-D ground scanning</strong> pipeline for terrain analysis and foothold planning.<br>
-            <strong>Outcome:</strong> Enabled perception-to-action integration for adaptive foot placement in unstructured environments.
+            <strong>Goal:</strong> Enable reliable foot placement by converting depth sensing into actionable terrain information.<br>
+            <strong>What I built:</strong> A real-time <strong>RGB-D ground scanning</strong> pipeline for terrain estimation and foothold selection.<br>
+            <strong>How it was validated:</strong> Integrated perception + planning with locomotion, focusing on <strong>latency</strong>, robustness, and deployment constraints.
           </p>
 
           <div class="tagrow">
             <span class="tag">Perception</span>
             <span class="tag">RGB-D</span>
+            <span class="tag">Real-time</span>
             <span class="tag">Foothold Planning</span>
             <span class="tag">Integration</span>
           </div>
@@ -239,6 +239,7 @@
           <div class="links">
             <a href="https://drive.google.com/file/d/1zyfCjptaHkPlgJCGj33eTmNyJyYo5lCE/view" target="_blank" rel="noopener">Video</a>
             <a href="PUT_PAPER_LINK_HERE" target="_blank" rel="noopener">Paper</a>
+            <a href="project_terrain_scanning.html">Details</a>
           </div>
         </div>
       </div>
@@ -248,29 +249,30 @@
     <div class="project">
       <div class="project-inner">
         <div class="project-media">
-          <!-- Put your image in: images/tunable_actuator.jpg -->
           <img src="images/tunable_actuator.png" alt="Tunable stiffness actuation project figure">
         </div>
 
         <div class="project-content">
-          <h2>Tunable-Stiffness Actuation & Characterization</h2>
+          <h2>Tunable-Stiffness Actuation: Design, Modeling, and Test</h2>
 
           <p>
-            <strong>Problem:</strong> Fixed-stiffness actuation limits adaptability in contact-rich robotic interaction.<br>
-            <strong>Contribution:</strong> Developed and characterized a tunable-stiffness actuator with modeling and experimental validation.<br>
-            <strong>Outcome:</strong> Quantified stiffness modulation range, response time, and repeatability for design decisions.
+            <strong>Goal:</strong> Improve adaptability in contact tasks through stiffness modulation at the actuator level.<br>
+            <strong>What I built:</strong> A tunable-stiffness actuator and a characterization workflow (modeling + experiments).<br>
+            <strong>How it was validated:</strong> Quantified <strong>stiffness range</strong>, <strong>response time</strong>, and <strong>repeatability</strong> to support design trade-offs.
           </p>
 
           <div class="tagrow">
             <span class="tag">Actuators</span>
+            <span class="tag">Mechanics</span>
             <span class="tag">Modeling</span>
-            <span class="tag">System ID</span>
+            <span class="tag">Testing</span>
             <span class="tag">Hardware</span>
           </div>
 
           <div class="links">
             <a href="https://drive.google.com/file/d/128FGaSlWmriPEm52kYXvozDvRD2qrr_D/view" target="_blank" rel="noopener">Video</a>
             <a href="PUT_PAPER_LINK_HERE" target="_blank" rel="noopener">Paper</a>
+            <a href="project_actuator.html">Details</a>
           </div>
         </div>
       </div>
