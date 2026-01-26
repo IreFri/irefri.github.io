@@ -47,10 +47,11 @@
     /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr; /* left dominant */
+      grid-template-columns: 1fr 1fr;   /* equal size */
       gap: 60px;
       align-items: flex-start;
     }
+
 
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; gap: 30px; }
@@ -76,7 +77,7 @@
     }
 
     .hero-topic {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       line-height: 1.4;
     }
 
@@ -112,7 +113,7 @@
     }
 
     .engineering-stack {
-      margin-top: 18px;
+      margin-top: 26px;
       padding-top: 14px;
       border-top: 2px solid rgba(0, 74, 153, 0.15);
       font-size: 1.05em;
@@ -345,60 +346,52 @@
 
     <!-- HERO -->
     <section class="hero">
-      <!-- LEFT COLUMN -->
-      <div>
-        <h1>Irene Frizza</h1>
-        <div class="role">Mechanical Robotics Engineer · Ph.D.</div>
-        
-        <div class="hero-topics">
-          <div class="hero-topic">
-            <div class="big">Mechanical Design for Humanoid Locomotion</div>
-            <div class="small">
-              compliant feet · elastic joints · contact mechanics · impact absorption · uneven terrain
-            </div>
-          </div>
+    <!-- LEFT COLUMN -->
+    <div>
+      <h1>Irene Frizza</h1>
+      <div class="role">Mechanical Robotics Engineer · Ph.D.</div>
+      
+      <div class="hero-topics">
     
-          <div class="hero-topic">
-            <div class="big">Compliant Mechanisms & Variable Stiffness</div>
-            <div class="small">
-              soft structures · pneumatic actuation · stiffness control · energy dissipation
-            </div>
-          </div>
-    
-          <div class="hero-topic" style="margin-bottom:0;">
-            <div class="big">Control & Learning as Engineering Tools</div>
-            <div class="small">
-              impedance control · RL · PPO · Isaac Gym · MuJoCo
-            </div>
+        <div class="hero-topic">
+          <div class="big">Mechanical Design for Humanoid Locomotion</div>
+          <div class="small">
+            compliant feet · elastic joints · contact mechanics · impact absorption · uneven terrain
           </div>
         </div>
     
-        <div class="engineering-stack">
-          <strong>Engineering stack</strong><br>
-          Mechanical design · CAD · compliant mechanisms · pneumatics · machining · 3D printing<br>
-          Python · C/C++ · ROS · Isaac Gym · MuJoCo
+        <div class="hero-topic">
+          <div class="big">Compliant Mechanisms & Variable Stiffness</div>
+          <div class="small">
+            soft structures · pneumatic actuation · stiffness control · energy dissipation
+          </div>
         </div>
-
+    
+        <div class="hero-topic">
+          <div class="big">Control & Learning as Engineering Tools</div>
+          <div class="small">
+            impedance control · RL · PPO · Isaac Gym · MuJoCo
+          </div>
+        </div>
+    
       </div>
+    
+      <div class="engineering-stack">
+        <strong>Engineering stack</strong><br>
+        Mechanical design · CAD · compliant mechanisms · pneumatics · machining · 3D printing<br>
+        Python · C/C++ · ROS · Isaac Gym · MuJoCo
+      </div>
+    </div>
+
     
       <!-- RIGHT COLUMN -->
       <div class="hero-image">
-      
         <div class="hero-figure-text">
           I design, prototype, and validate <strong>mechanical systems for humanoid locomotion</strong>,
           from <strong>simulation-driven design</strong> to <strong>real-world experiments</strong>.
         </div>
-      
-        <div class="engineering-stack">
-          <strong>Engineering stack</strong><br>
-          Mechanical design · CAD · compliant mechanisms · pneumatics · machining · 3D printing<br>
-          Python · C/C++ · ROS · Isaac Gym · MuJoCo
-        </div>
-      
         <img src="images/locomotion.png" alt="Humanoid locomotion">
-      
       </div>
-
 
     </section>
 
