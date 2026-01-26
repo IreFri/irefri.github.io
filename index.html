@@ -39,16 +39,10 @@
     /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: 1fr 1.15fr;
       gap: 50px;
       align-items: center;
       margin-bottom: 90px;
-    }
-
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
     }
 
     h1 {
@@ -64,8 +58,16 @@
     }
 
     .hero-points {
-      font-size: 1.45em;
-      line-height: 1.6;
+      font-size: 1.25em;
+      line-height: 1.45;
+    }
+    
+    .hero-points div {
+      margin-bottom: 6px;
+    }
+    
+    .hero-points strong {
+      color: #003a7a;
     }
 
     .hero-points div {
@@ -74,7 +76,7 @@
 
     .hero-image img {
       width: 100%;
-      border-radius: 44px;
+      border-radius: 36px;
     }
 
     /* SECTION */
@@ -214,11 +216,11 @@
         <div class="role">Robotics Research Engineer · Ph.D.</div>
 
     <div class="hero-points">
-      <div><strong>Humanoid locomotion</strong> Uneven terrain · push recovery · contact uncertainty</div>
-      <div><strong>Compliant Mechanisms</strong> Soft feet · compliant leg joints · impact handling</div>
-      <div><strong>Learning-Based Analysis</strong> Stress testing · robustness optimization · RL</div>
-      <div><strong>Simulation-Driven Design</strong> Large-scale evaluation · Isaac Gym · MuJoCo</div>
-      <div><strong>Variable Impedance</strong> Adaptive compliance · safe physical interaction</div>
+      <div><strong>Humanoid Locomotion</strong> · uneven terrain · push recovery · contact uncertainty</div>
+      <div><strong>Compliant Robotics</strong> · soft feet · elastic joints · impact handling</div>
+      <div><strong>Learning-Based Evaluation</strong> · reinforcement learning · robustness stress testing</div>
+      <div><strong>Physics Simulation</strong> · Isaac Gym · MuJoCo · large-scale rollouts</div>
+      <div><strong>Variable Impedance</strong> · adaptive compliance · safe physical interaction</div>
     </div>
       </div>
 
@@ -393,6 +395,61 @@
       </div>
     </section>
 
+
+    <!-- PUBLICATIONS -->
+    <section style="margin-top:110px;">
+      <div class="section-title">Publications</div>
+    
+      <div style="max-width:900px; font-size:1.15em; line-height:1.55;">
+        <p><strong>Journal publications</strong></p>
+        <ul>
+          <li>Enhancing humanoid robot stability on uneven terrain with online foothold planning based on ground scanning — <em>JIRS</em>, 2025</li>
+          <li>Compliant Pneumatic Feet with Real-Time Stiffness Adaptation for Humanoid Locomotion — <em>Advanced Robotics Research</em>, 2025</li>
+          <li>Design and Validation of a Soft Pneumatic Submodule for Adaptive Humanoid Foot Compliance — <em>Machines</em>, 2025</li>
+          <li>Humanoids’ feet: State-of-the-art and future directions — <em>IJHR</em>, 2022</li>
+          <li>HRP-4 walks on soft feet — <em>RA-L</em>, 2020</li>
+        </ul>
+    
+        <p style="margin-top:18px;"><strong>Conference publications</strong></p>
+        <ul>
+          <li>Locomotion performance of humanoid robots with soft feet — <em>RSJ</em>, 2021</li>
+          <li>Benefits of variable stiffness feet for humanoid walking — <em>Humanoids</em>, 2022</li>
+          <li>Compliant leg joints for humanoids: Parallel vs. series elasticity in RL-based locomotion — <em>IROS</em>, under review</li>
+        </ul>
+      </div>
+    
+      <div style="margin-top:30px;">
+        <a class="project-link" href="research.html">View full publication list →</a>
+      </div>
+    </section>
+
+    <!-- CV & CONTACT -->
+    <section style="margin-top:120px;">
+      <div class="section-title">CV & Contact</div>
+    
+      <div style="font-size:1.25em; line-height:1.6;">
+        <p>
+          <strong>Download CV</strong><br>
+          Full academic and professional resume (PDF)
+        </p>
+    
+        <p>
+          <a class="project-link" href="Irene_Frizza_Resume.pdf" download>
+            Download Irene_Frizza_Resume.pdf →
+          </a>
+        </p>
+    
+        <p style="margin-top:30px;">
+          <strong>Contact</strong><br>
+          Email: <a href="mailto:irenefrizza@gmail.com">irenefrizza@gmail.com</a><br>
+          LinkedIn: <a href="https://linkedin.com/in/irenefrizza" target="_blank">linkedin.com/in/irenefrizza</a><br>
+          GitHub: <a href="https://github.com/IreFri" target="_blank">github.com/IreFri</a>
+        </p>
+      </div>
+    </section>
+
+
+    
 
   </div>
 </body>
