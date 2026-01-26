@@ -184,6 +184,24 @@
       margin-bottom: 12px;
     }
 
+    .media-links {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    
+    .media-links a {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #003a7a;
+      text-decoration: none;
+    }
+    
+    .media-links a:hover {
+      text-decoration: underline;
+    }
+
     /* SKILLS GRID */
     .skills-grid {
       display: grid;
@@ -352,9 +370,10 @@
     <!-- SELECTED PROJECTS -->
     <section>
       <div class="section-title">Selected projects</div>
-
+    
       <div class="projects-grid">
-
+    
+        <!-- PROJECT 1 -->
         <div class="project-card">
           <img src="images/terrain_scanning.png" alt="Terrain scanning">
           <div class="project-title">RGB-D Foothold Planning</div>
@@ -362,9 +381,20 @@
             <strong>RGB-D online ground scanning</strong> integrated with
             <strong>perception, control, and planning</strong> for real-time foothold selection.
           </div>
-          <a class="project-link" href="projects.html">View project (video, PDF) →</a>
+    
+          <a class="project-link" href="projects.html">View projects →</a>
+    
+          <div class="media-links">
+            <a href="https://drive.google.com/file/d/1zyfCjptaHkPlgJCGj33eTmNyJyYo5lCE/view" target="_blank" rel="noopener">
+              Video
+            </a>
+            <a href="https://www.dropbox.com/scl/fi/nrp2p1lnu7mcizpl87h4v/Control_algorithms_compliant_foot___JIRS.pdf?rlkey=dylo6bspo5s40jg1wlt1jr6vh&st=he4zx2ll&dl=0" target="_blank" rel="noopener">
+              Paper
+            </a>
+          </div>
         </div>
-
+    
+        <!-- PROJECT 2 -->
         <div class="project-card">
           <img src="images/soft_foot.png" alt="Soft robotic foot">
           <div class="project-title">Adaptive Soft Feet</div>
@@ -372,9 +402,20 @@
             <strong>Manufactured pneumatic soft feet</strong> with
             <strong>online variable stiffness</strong> for robust landing and impact absorption.
           </div>
-          <a class="project-link" href="projects.html">View project (video, PDF) →</a>
+    
+          <a class="project-link" href="projects.html">View projects →</a>
+    
+          <div class="media-links">
+            <a href="https://drive.google.com/file/d/1fQononGS5qgtP_7HbYMnC6fAzg2U9fYS/view" target="_blank" rel="noopener">
+              Video
+            </a>
+            <a href="https://www.dropbox.com/scl/fi/nssd3v7wbzu5w5uugmtql/Compliant_Pneumatic_Feet.pdf?rlkey=xple6bu7d9o7atxelp6u73ij5&st=ymhajsga&dl=0" target="_blank" rel="noopener">
+              Paper
+            </a>
+          </div>
         </div>
-
+    
+        <!-- PROJECT 3 -->
         <div class="project-card">
           <img src="images/leg_joints.png" alt="Compliant joints">
           <div class="project-title">Compliant Leg Joints (RL)</div>
@@ -382,11 +423,25 @@
             <strong>Parallel & series elastic joints</strong> evaluated via
             <strong>reinforcement learning pipelines</strong> in <strong>Isaac Gym</strong>.
           </div>
-          <a class="project-link" href="projects.html">View project (video, PDF) →</a>
+    
+          <a class="project-link" href="projects.html">View projects →</a>
+    
+          <div class="media-links">
+            <a href="https://github.com/IreFri/unitree_rl_gym_soft_joints/tree/main" target="_blank" rel="noopener">
+              GitHub
+            </a>
+            <a href="https://drive.google.com/file/d/1L3Mpu1KTA6RxJU5HPF-yZxO5Au3a9a3y/view" target="_blank" rel="noopener">
+              Video
+            </a>
+            <a href="https://www.dropbox.com/scl/fi/x99lfe6qi3y4f080omgx5/Soft_Joints___Irene.pdf?rlkey=zn67410j355k6wtypt81kpww3&st=319nzq7q&dl=0" target="_blank" rel="noopener">
+              Paper
+            </a>
+          </div>
         </div>
-
+    
       </div>
     </section>
+
 
     <!-- SKILLS OVERVIEW -->
     <section style="margin-top:110px;">
