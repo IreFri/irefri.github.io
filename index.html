@@ -64,7 +64,7 @@
     }
 
     .hero-points {
-      font-size: 1.35em;
+      font-size: 1.45em;
       line-height: 1.6;
     }
 
@@ -74,7 +74,8 @@
 
     .hero-image img {
       width: 100%;
-      border-radius: 14px;
+      max-width: 520px;   /* NEW */
+      border-radius: 16px;
     }
 
     /* SECTION */
@@ -145,12 +146,12 @@
         <h1>Irene Frizza</h1>
         <div class="role">Robotics Research Engineer · Ph.D.</div>
 
-        <div class="hero-points">
-          <div><strong>Humanoid locomotion</strong> under impacts and terrain uncertainty</div>
-          <div><strong>Control & compliance</strong> for contact-rich interaction</div>
-          <div><strong>Simulation-driven design</strong> (Isaac Gym, MuJoCo)</div>
-          <div><strong>Hardware-informed solutions</strong> from model to experiment</div>
-        </div>
+    <div class="hero-points">
+      <div><strong>Humanoid locomotion</strong> · impacts · uneven terrain · push recovery</div>
+      <div><strong>Control & compliance</strong> · impedance · contact-rich interaction</div>
+      <div><strong>Simulation-driven design</strong> · Isaac Gym · MuJoCo · large-scale testing</div>
+      <div><strong>Model → hardware pipeline</strong> · design · validation · experiments</div>
+    </div>
       </div>
 
       <div class="hero-image">
@@ -167,27 +168,34 @@
         <div class="project-card">
           <img src="images/terrain_scanning.png" alt="Terrain scanning">
           <div class="project-title">RGB-D Foothold Planning</div>
-          <div class="project-desc">
-            Real-time perception pipeline converting depth data into reliable foot placement for humanoids.
-          </div>
+        <div class="project-desc">
+          <strong>RGB-D online ground scanning</strong> integrated with
+          <strong>perception, control, and planning</strong> to generate
+          reliable foothold candidates in real time.
+        </div>
           <a class="project-link" href="projects.html">View project →</a>
         </div>
 
         <div class="project-card">
           <img src="images/soft_foot.png" alt="Soft robotic foot">
           <div class="project-title">Adaptive Soft Feet</div>
-          <div class="project-desc">
-            Pneumatically actuated feet with tunable stiffness for stable landing and impact absorption.
-          </div>
+        <div class="project-desc">
+          <strong>Manufactured pneumatic soft feet</strong> with
+          <strong>online variable stiffness</strong> —
+          among the first compliant humanoid feet enabling real-time stiffness adaptation
+          during landing and terrain interaction.
+        </div>
           <a class="project-link" href="projects.html">View project →</a>
         </div>
 
         <div class="project-card">
           <img src="images/leg_joints.png" alt="Compliant joints">
           <div class="project-title">Compliant Leg Joints</div>
-          <div class="project-desc">
-            Parallel and series elastic joints evaluated through large-scale simulation stress testing.
-          </div>
+        <div class="project-desc">
+          <strong>Parallel & series elastic joints</strong> evaluated using
+          <strong>reinforcement learning pipelines</strong> in <strong>Isaac Gym</strong> for
+          large-scale robustness and impact stress testing.
+        </div>
           <a class="project-link" href="projects.html">View project →</a>
         </div>
 
