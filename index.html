@@ -47,11 +47,9 @@
     /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 0.90fr 1.25fr;
-      gap: 60px;
-      align-items: center;
-      margin-bottom: 70px;
+      grid-template-columns: 0.85fr 1.35fr;
     }
+
 
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; gap: 30px; }
@@ -77,22 +75,22 @@
     }
 
     .hero-topic {
-      margin-bottom: 14px;
-      line-height: 1.35;
+      margin-bottom: 20px;
+      line-height: 1.4;
     }
 
     .hero-topic .big {
       font-weight: 800;
       color: #003a7a;
-      font-size: 1.22em;
-      letter-spacing: 0.2px;
+      font-size: 1.26em;   /* was 1.22em */
+    }
+    
+    .hero-topic .small {
+      font-size: 1.08em;   /* was 1.05em */
+      color: #333;
+      margin-top: 6px;     /* was 4px */
     }
 
-    .hero-topic .small {
-      font-size: 1.05em;
-      color: #333;
-      margin-top: 4px;
-    }
 
     .hero-image {
       position: relative;
@@ -105,12 +103,21 @@
     }
 
     .hero-figure-text {
-      font-size: 1.15em;
-      line-height: 1.45;
+      font-size: 1.22em;      /* was 1.15em */
+      line-height: 1.55;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin-bottom: 22px;   /* more air */
       color: #1f1f1f;
     }
+
+
+    .engineering-stack {
+      margin-top: 22px;
+      font-size: 1.08em;
+      line-height: 1.6;
+      color: #333;
+    }
+
 
     
 
@@ -366,13 +373,12 @@
           </div>
         </div>
     
-        <div style="margin-top:18px; font-size:1.15em; color:#333;">
-          <strong>Engineering stack:</strong>
+        <div class="engineering-stack">
+          <strong>Engineering stack</strong><br>
+          Mechanical design · CAD · compliant mechanisms · pneumatics · machining · 3D printing<br>
+          Python · C/C++ · ROS · Isaac Gym · MuJoCo
         </div>
-        <div style="margin-top:18px; font-size:1.15em; color:#333;">
-          </strong>mechanical design · CAD · compliant mechanisms · pneumatics ·
-          machining · 3D printing · Python · C/C++ · ROS · Isaac Gym · MuJoCo</strong>
-        </div>
+
       </div>
     
       <!-- RIGHT COLUMN -->
