@@ -17,7 +17,7 @@
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 50px 25px 80px;
+      padding: 50px 25px 90px;
     }
 
     nav {
@@ -39,14 +39,18 @@
     /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 1fr 1.15fr;
-      gap: 50px;
+      grid-template-columns: 1.05fr 1.25fr;
+      gap: 60px;
       align-items: center;
-      margin-bottom: 90px;
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; gap: 30px; }
     }
 
     h1 {
-      font-size: 3.4em;
+      font-size: 3.5em;
       margin: 0 0 10px;
     }
 
@@ -54,35 +58,98 @@
       font-size: 1.6em;
       font-weight: 700;
       color: #003a7a;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
-    .hero-points {
-      font-size: 1.25em;
-      line-height: 1.45;
+    /* Hero: very scannable */
+    .hero-topics {
+      border-left: 4px solid rgba(0, 74, 153, 0.22);
+      padding-left: 18px;
+      margin-top: 10px;
     }
-    
-    .hero-points div {
-      margin-bottom: 6px;
+
+    .hero-topic {
+      margin-bottom: 14px;
+      line-height: 1.35;
     }
-    
-    .hero-points strong {
+
+    .hero-topic .big {
+      font-weight: 800;
       color: #003a7a;
+      font-size: 1.22em;
+      letter-spacing: 0.2px;
     }
 
-    .hero-points div {
-      margin-bottom: 10px;
+    .hero-topic .small {
+      font-size: 1.05em;
+      color: #333;
+      margin-top: 4px;
     }
 
     .hero-image img {
       width: 100%;
-      border-radius: 36px;
+      border-radius: 40px;
     }
 
     /* SECTION */
     .section-title {
       font-size: 2.1em;
       margin-bottom: 24px;
+    }
+
+    .project-link {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: #004a99;
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    /* CV & CONTACT */
+    .cta-card {
+      border: 2px solid rgba(0, 74, 153, 0.18);
+      border-radius: 18px;
+      padding: 26px 22px;
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 850px) {
+      .cta-grid { grid-template-columns: 1fr; }
+    }
+
+    .cta-title {
+      font-size: 1.35em;
+      font-weight: 800;
+      color: #003a7a;
+      margin-bottom: 8px;
+    }
+
+    .cta-body {
+      font-size: 1.15em;
+      line-height: 1.6;
+    }
+
+    .cta-body a {
+      color: #004a99;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .cta-body a:hover {
+      text-decoration: underline;
     }
 
     /* PROJECT GRID */
@@ -106,8 +173,9 @@
 
     .project-title {
       font-size: 1.45em;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 8px;
+      color: #003a7a;
     }
 
     .project-desc {
@@ -116,84 +184,95 @@
       margin-bottom: 12px;
     }
 
-    .project-link {
-      font-size: 1.1em;
-      font-weight: 700;
-      color: #004a99;
-      text-decoration: none;
-    }
-
-    .project-link:hover {
-      text-decoration: underline;
-    }
-
+    /* SKILLS GRID */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 26px;
     }
-    
+
     .skill-tile {
       border: 2px solid rgba(0, 74, 153, 0.18);
       border-radius: 16px;
       padding: 20px 22px;
     }
-    
+
     .skill-head {
       font-size: 1.45em;
-      font-weight: 700;
+      font-weight: 800;
       color: #003a7a;
       margin-bottom: 10px;
     }
-    
+
     .skill-body {
       font-size: 1.15em;
       line-height: 1.55;
     }
 
-    .experience-list {
-      max-width: 900px;
-    }
+    /* EXPERIENCE */
+    .experience-list { max-width: 900px; }
 
     .exp-item {
       border-left: 4px solid rgba(0, 74, 153, 0.25);
       padding-left: 22px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
-    
+
     .exp-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       gap: 20px;
     }
-    
+
     .exp-role {
       font-size: 1.45em;
-      font-weight: 700;
+      font-weight: 800;
       color: #003a7a;
     }
-    
+
     .exp-date {
       font-size: 1.05em;
-      font-weight: 600;
+      font-weight: 700;
       color: #444;
       white-space: nowrap;
     }
-    
+
     .exp-org {
       font-size: 1.12em;
-      font-weight: 600;
+      font-weight: 700;
       margin: 6px 0 8px;
     }
-    
+
     .exp-points {
       font-size: 1.15em;
       line-height: 1.55;
     }
 
+    /* PUBLICATIONS */
+    .pub-list {
+      max-width: 950px;
+      font-size: 1.15em;
+      line-height: 1.65;
+      padding-left: 20px;
+    }
 
-    
+    .pub-list li { margin-bottom: 14px; }
+
+    .me {
+      font-weight: 900;
+      font-size: 1.05em;
+      color: #003a7a;
+    }
+
+    .pub-title {
+      font-style: italic;
+    }
+
+    .pub-venue {
+      color: #444;
+      font-weight: 700;
+    }
   </style>
 </head>
 
@@ -215,19 +294,59 @@
         <h1>Irene Frizza</h1>
         <div class="role">Robotics Research Engineer · Ph.D.</div>
 
-      <div class="hero-points">
-        <div>
-          <strong>Compliant Robotics</strong><br> · <strong>Humanoid Locomotion</strong><br> · <strong>RL-Based Evaluation</strong><br> · <strong>Variable Impedance Control</strong><br>
+        <div class="hero-topics">
+          <div class="hero-topic">
+            <div class="big">Compliant Robotics · Humanoid Locomotion</div>
+            <div class="small">soft feet · elastic joints · uneven terrain · push recovery</div>
+          </div>
+
+          <div class="hero-topic">
+            <div class="big">RL-Based Evaluation Pipelines</div>
+            <div class="small">reinforcement learning · stress testing · robustness analysis · policy evaluation</div>
+          </div>
+
+          <div class="hero-topic">
+            <div class="big">Physics-Based Simulation</div>
+            <div class="small">Isaac Gym · MuJoCo · large-scale rollouts · contact dynamics</div>
+          </div>
+
+          <div class="hero-topic" style="margin-bottom:0;">
+            <div class="big">Variable Impedance Control</div>
+            <div class="small">adaptive compliance · contact-rich interaction · safety</div>
+          </div>
         </div>
-      
-        <div>
-          soft feet · elastic joints · uneven terrain · push recovery · RL · policy analysis · Isaac Gym · MuJoCo · adaptive compliance · safe physical interaction
-        </div>
-  
       </div>
 
       <div class="hero-image">
         <img src="images/locomotion.png" alt="Humanoid locomotion">
+      </div>
+    </section>
+
+    <!-- CV & CONTACT (MOVED UP) -->
+    <section style="margin-bottom:110px;">
+      <div class="cta-card">
+        <div class="section-title" style="margin-bottom:14px;">CV & Contact</div>
+
+        <div class="cta-grid">
+          <div>
+            <div class="cta-title">Download CV</div>
+            <div class="cta-body">
+              Full academic and professional resume (PDF)<br><br>
+              <a class="project-link" href="Irene_Frizza_Resume.pdf" download>
+                Download Irene_Frizza_Resume.pdf →
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="cta-title">Contact</div>
+            <div class="cta-body">
+              Email: <a href="mailto:irenefrizza@gmail.com">irenefrizza@gmail.com</a><br>
+              LinkedIn: <a href="https://linkedin.com/in/irenefrizza" target="_blank">linkedin.com/in/irenefrizza</a><br>
+              GitHub: <a href="https://github.com/IreFri" target="_blank">github.com/IreFri</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -240,34 +359,30 @@
         <div class="project-card">
           <img src="images/terrain_scanning.png" alt="Terrain scanning">
           <div class="project-title">RGB-D Foothold Planning</div>
-        <div class="project-desc">
-          <strong>RGB-D online ground scanning</strong> integrated with
-          <strong>perception, control, and planning</strong> to generate
-          reliable foothold candidates in real time.
-        </div>
+          <div class="project-desc">
+            <strong>RGB-D online ground scanning</strong> integrated with
+            <strong>perception, control, and planning</strong> for real-time foothold selection.
+          </div>
           <a class="project-link" href="projects.html">View project →</a>
         </div>
 
         <div class="project-card">
           <img src="images/soft_foot.png" alt="Soft robotic foot">
           <div class="project-title">Adaptive Soft Feet</div>
-        <div class="project-desc">
-          <strong>Manufactured pneumatic soft feet</strong> with
-          <strong>online variable stiffness</strong> —
-          among the first compliant humanoid feet enabling real-time stiffness adaptation
-          during landing and terrain interaction.
-        </div>
+          <div class="project-desc">
+            <strong>Manufactured pneumatic soft feet</strong> with
+            <strong>online variable stiffness</strong> for robust landing and impact absorption.
+          </div>
           <a class="project-link" href="projects.html">View project →</a>
         </div>
 
         <div class="project-card">
           <img src="images/leg_joints.png" alt="Compliant joints">
-          <div class="project-title">Compliant Leg Joints in RL-Based Locomotion</div>
-        <div class="project-desc">
-          <strong>Parallel & series elastic joints</strong> evaluated using
-          <strong>reinforcement learning pipelines</strong> in <strong>Isaac Gym</strong> for
-          large-scale robustness and impact stress testing.
-        </div>
+          <div class="project-title">Compliant Leg Joints (RL)</div>
+          <div class="project-desc">
+            <strong>Parallel & series elastic joints</strong> evaluated via
+            <strong>reinforcement learning pipelines</strong> in <strong>Isaac Gym</strong>.
+          </div>
           <a class="project-link" href="projects.html">View project →</a>
         </div>
 
@@ -275,66 +390,54 @@
     </section>
 
     <!-- SKILLS OVERVIEW -->
-    <section style="margin-top:100px;">
+    <section style="margin-top:110px;">
       <div class="section-title">Core skills</div>
-    
+
       <div class="skills-grid">
-    
+
         <div class="skill-tile">
           <div class="skill-head">Locomotion & Control</div>
-          <div class="skill-body">
-            impedance · compliance · push recovery · stability
-          </div>
+          <div class="skill-body">impedance · compliance · push recovery · stability</div>
         </div>
-    
+
         <div class="skill-tile">
           <div class="skill-head">Simulation & Evaluation</div>
-          <div class="skill-body">
-            Isaac Gym · MuJoCo · large-scale testing · RL pipelines
-          </div>
+          <div class="skill-body">Isaac Gym · MuJoCo · large-scale testing · RL pipelines</div>
         </div>
-    
+
         <div class="skill-tile">
           <div class="skill-head">Learning as Engineering Tool</div>
-          <div class="skill-body">
-            reinforcement learning · stress testing · robustness analysis
-          </div>
+          <div class="skill-body">reinforcement learning · stress testing · robustness analysis</div>
         </div>
-    
+
         <div class="skill-tile">
           <div class="skill-head">Physical Interaction</div>
-          <div class="skill-body">
-            compliant mechanisms · variable stiffness · contact dynamics
-          </div>
+          <div class="skill-body">compliant mechanisms · variable stiffness · contact dynamics</div>
         </div>
-    
+
         <div class="skill-tile">
           <div class="skill-head">Hardware & Prototyping</div>
-          <div class="skill-body">
-            pneumatic systems · manufacturing · experiments
-          </div>
+          <div class="skill-body">pneumatic systems · manufacturing · experiments</div>
         </div>
-    
+
         <div class="skill-tile">
           <div class="skill-head">Software</div>
-          <div class="skill-body">
-            Python · C/C++ · ROS · real-time systems
-          </div>
+          <div class="skill-body">Python · C/C++ · ROS · real-time systems</div>
         </div>
-    
+
       </div>
-    
+
       <div style="margin-top:34px;">
         <a class="project-link" href="skills.html">View full skills →</a>
       </div>
     </section>
 
     <!-- EXPERIENCE OVERVIEW -->
-    <section style="margin-top:110px;">
+    <section style="margin-top:120px;">
       <div class="section-title">Experience</div>
-    
+
       <div class="experience-list">
-    
+
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-role">Postdoctoral Researcher · JSPS Fellow</div>
@@ -345,7 +448,7 @@
             compliant joint models · Isaac Gym pipelines · reinforcement learning stress testing · push recovery
           </div>
         </div>
-    
+
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-role">Robotics Engineer · Moonshot Project</div>
@@ -356,7 +459,7 @@
             pneumatic control · embedded software · real-time feedback · system integration
           </div>
         </div>
-    
+
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-role">Research Assistant</div>
@@ -367,7 +470,7 @@
             soft feet manufacturing · humanoid experiments · HRP-4CR · stability evaluation
           </div>
         </div>
-    
+
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-role">Research Engineer</div>
@@ -378,7 +481,7 @@
             MuJoCo simulation · variable stiffness · multi-contact analysis
           </div>
         </div>
-    
+
         <div class="exp-item">
           <div class="exp-header">
             <div class="exp-role">Research Intern</div>
@@ -389,128 +492,33 @@
             gait analysis · motion capture · force plates · contact metrics
           </div>
         </div>
-    
+
       </div>
-    
+
       <div style="margin-top:34px;">
         <a class="project-link" href="experience.html">View full experience →</a>
       </div>
     </section>
 
-
-    <!-- PUBLICATIONS -->
-    <section style="margin-top:110px;">
+    <!-- PUBLICATIONS (UNIFIED LIST, INLINE AUTHORS + TITLE) -->
+    <section style="margin-top:120px;">
       <div class="section-title">Publications</div>
-    
-      <div style="max-width:900px; font-size:1.15em; line-height:1.6;">
-        
-        <p><strong>Journal publications</strong></p>
-        <ul>
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Enhancing humanoid robot stability on uneven terrain with online foothold planning based on ground scanning.</em>
-            <br>
-            Journal of Intelligent & Robotic Systems (Springer), 2025
-          </li>
-    
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Compliant Pneumatic Feet with Real-Time Stiffness Adaptation for Humanoid Locomotion.</em>
-            <br>
-            Advanced Robotics Research, 2025
-          </li>
-    
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Design and Validation of a Soft Pneumatic Submodule for Adaptive Humanoid Foot Compliance.</em>
-            <br>
-            Machines, 2025
-          </li>
-    
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Humanoids’ feet: State-of-the-art and future directions.</em>
-            <br>
-            International Journal of Humanoid Robotics, 2022
-          </li>
-    
-          <li>
-            Catalano, M. G., <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>HRP-4 walks on soft feet.</em>
-            <br>
-            IEEE Robotics and Automation Letters, 2020
-          </li>
-        </ul>
-    
-        <p style="margin-top:24px;"><strong>Conference publications</strong></p>
-        <ul>
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Locomotion performance of humanoid robots with soft feet.</em>
-            <br>
-            Robotics Society of Japan Conference (International Session), 2021
-          </li>
-    
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Benefits of variable stiffness feet for humanoid walking on rough terrains.</em>
-            <br>
-            IEEE-RAS International Conference on Humanoid Robots, 2022
-          </li>
-    
-          <li>
-            <span style="font-weight:700; font-size:1.05em;">Frizza, I.</span>, et al.
-            <br>
-            <em>Compliant leg joints for humanoids: Parallel vs. series elasticity in RL-based locomotion.</em>
-            <br>
-            IEEE/RSJ IROS (under review)
-          </li>
-        </ul>
-      </div>
-    
-      <div style="margin-top:30px;">
+
+      <ul class="pub-list">
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Enhancing humanoid robot stability on uneven terrain with online foothold planning based on ground scanning.</span> <span class="pub-venue">Journal of Intelligent & Robotic Systems (Springer), 2025</span></li>
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Compliant Pneumatic Feet with Real-Time Stiffness Adaptation for Humanoid Locomotion.</span> <span class="pub-venue">Advanced Robotics Research, 2025</span></li>
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Design and Validation of a Soft Pneumatic Submodule for Adaptive Humanoid Foot Compliance.</span> <span class="pub-venue">Machines, 2025</span></li>
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Humanoids’ feet: State-of-the-art and future directions.</span> <span class="pub-venue">International Journal of Humanoid Robotics, 2022</span></li>
+        <li>Catalano, M. G., <span class="me">Frizza, I.</span>, et al. — <span class="pub-title">HRP-4 walks on soft feet.</span> <span class="pub-venue">IEEE Robotics and Automation Letters, 2020</span></li>
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Locomotion performance of humanoid robots with soft feet.</span> <span class="pub-venue">Robotics Society of Japan Conference (International Session), 2021</span></li>
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Benefits of variable stiffness feet for humanoid walking on rough terrains.</span> <span class="pub-venue">IEEE-RAS International Conference on Humanoid Robots, 2022</span></li>
+        <li><span class="me">Frizza, I.</span>, et al. — <span class="pub-title">Compliant leg joints for humanoids: Parallel vs. series elasticity in RL-based locomotion.</span> <span class="pub-venue">IEEE/RSJ IROS (under review)</span></li>
+      </ul>
+
+      <div style="margin-top:28px;">
         <a class="project-link" href="research.html">View details →</a>
       </div>
     </section>
-
-
-    <!-- CV & CONTACT -->
-    <section style="margin-top:120px; text-align:center;">
-      <div class="section-title">CV & Contact</div>
-    
-      <div style="font-size:1.3em; line-height:1.7; max-width:600px; margin:0 auto;">
-        
-        <p>
-          <strong>Download CV</strong><br>
-          Full academic and professional resume (PDF)
-        </p>
-    
-        <p style="margin-top:18px;">
-          <a class="project-link" href="Irene_Frizza_Resume.pdf" download>
-            Download Irene_Frizza_Resume.pdf →
-          </a>
-        </p>
-    
-        <p style="margin-top:36px;">
-          <strong>Contact</strong><br>
-          Email: <a href="mailto:irenefrizza@gmail.com">irenefrizza@gmail.com</a><br>
-          LinkedIn: <a href="https://linkedin.com/in/irenefrizza" target="_blank">linkedin.com/in/irenefrizza</a><br>
-          GitHub: <a href="https://github.com/IreFri" target="_blank">github.com/IreFri</a>
-        </p>
-    
-      </div>
-    </section>
-
-
-
-    
 
   </div>
 </body>
