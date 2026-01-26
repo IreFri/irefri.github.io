@@ -149,35 +149,47 @@
       line-height: 1.55;
     }
 
-    .exp-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
+    .experience-list {
+      max-width: 900px;
+    }
+
+    .exp-item {
+      border-left: 4px solid rgba(0, 74, 153, 0.25);
+      padding-left: 22px;
+      margin-bottom: 36px;
     }
     
-    .exp-block {
-      border: 2px solid rgba(0, 74, 153, 0.18);
-      border-radius: 16px;
-      padding: 20px 22px;
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
     }
     
     .exp-role {
-      font-size: 1.4em;
+      font-size: 1.45em;
       font-weight: 700;
       color: #003a7a;
-      margin-bottom: 6px;
+    }
+    
+    .exp-date {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: #444;
+      white-space: nowrap;
     }
     
     .exp-org {
-      font-size: 1.05em;
+      font-size: 1.12em;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin: 6px 0 8px;
     }
     
     .exp-points {
-      font-size: 1.12em;
+      font-size: 1.15em;
       line-height: 1.55;
     }
+
 
     
   </style>
@@ -202,10 +214,11 @@
         <div class="role">Robotics Research Engineer · Ph.D.</div>
 
     <div class="hero-points">
-      <div><strong>Humanoid locomotion</strong> under impacts and terrain uncertainty</div>
-      <div><strong>Control & compliance</strong> for contact-rich interaction</div>
-      <div><strong>Simulation-driven design</strong> (Isaac Gym, MuJoCo)</div>
-      <div><strong>Hardware-informed solutions</strong> from model to experiment</div>
+      <div><strong>Humanoid locomotion</strong> Uneven terrain · push recovery · contact uncertainty</div>
+      <div><strong>Compliant Mechanisms</strong> Soft feet · compliant leg joints · impact handling</div>
+      <div><strong>Learning-Based Analysis</strong> Stress testing · robustness optimization · RL</div>
+      <div><strong>Simulation-Driven Design</strong> Large-scale evaluation · Isaac Gym · MuJoCo</div>
+      <div><strong>Variable Impedance</strong> Adaptive compliance · safe physical interaction</div>
     </div>
       </div>
 
@@ -316,53 +329,58 @@
     <section style="margin-top:110px;">
       <div class="section-title">Experience</div>
     
-      <div class="exp-grid">
+      <div class="experience-list">
     
-        <div class="exp-block">
-          <div class="exp-role">
-            Postdoctoral Researcher · JSPS Fellow
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Postdoctoral Researcher · JSPS Fellow</div>
+            <div class="exp-date">2024 – Present</div>
           </div>
-          <div class="exp-org">The University of Tokyo · 2024 – Present</div>
+          <div class="exp-org">The University of Tokyo</div>
           <div class="exp-points">
-            compliant joint models · Isaac Gym pipelines · RL-based stress testing · push recovery
+            compliant joint models · Isaac Gym pipelines · reinforcement learning stress testing · push recovery
           </div>
         </div>
     
-        <div class="exp-block">
-          <div class="exp-role">
-            Robotics Engineer · Moonshot Project
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Robotics Engineer · Moonshot Project</div>
+            <div class="exp-date">2024</div>
           </div>
-          <div class="exp-org">AIST – Joint Robotics Laboratory · 2024</div>
+          <div class="exp-org">AIST – Joint Robotics Laboratory</div>
           <div class="exp-points">
             pneumatic control · embedded software · real-time feedback · system integration
           </div>
         </div>
     
-        <div class="exp-block">
-          <div class="exp-role">
-            Research Assistant
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Research Assistant</div>
+            <div class="exp-date">2021 – 2023</div>
           </div>
-          <div class="exp-org">AIST – Joint Robotics Laboratory · 2021 – 2023</div>
+          <div class="exp-org">AIST – Joint Robotics Laboratory</div>
           <div class="exp-points">
             soft feet manufacturing · humanoid experiments · HRP-4CR · stability evaluation
           </div>
         </div>
     
-        <div class="exp-block">
-          <div class="exp-role">
-            Research Engineer
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Research Engineer</div>
+            <div class="exp-date">2020</div>
           </div>
-          <div class="exp-org">LIRMM (CNRS) · 2020</div>
+          <div class="exp-org">LIRMM (CNRS)</div>
           <div class="exp-points">
             MuJoCo simulation · variable stiffness · multi-contact analysis
           </div>
         </div>
     
-        <div class="exp-block">
-          <div class="exp-role">
-            Research Intern
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Research Intern</div>
+            <div class="exp-date">2019</div>
           </div>
-          <div class="exp-org">Tokyo University of Agriculture and Technology · 2019</div>
+          <div class="exp-org">Tokyo University of Agriculture and Technology</div>
           <div class="exp-points">
             gait analysis · motion capture · force plates · contact metrics
           </div>
@@ -374,6 +392,7 @@
         <a class="project-link" href="experience.html">View full experience →</a>
       </div>
     </section>
+
 
   </div>
 </body>
