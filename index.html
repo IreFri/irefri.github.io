@@ -47,9 +47,10 @@
     /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 0.85fr 1.35fr;
+      grid-template-columns: 1.15fr 0.85fr; /* left dominant */
+      gap: 60px;
+      align-items: flex-start;
     }
-
 
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; gap: 30px; }
@@ -98,28 +99,27 @@
 
     .hero-image img {
       width: 100%;
-      border-radius: 40px;
+      max-width: 420px;   /* NEW */
+      border-radius: 32px;
       display: block;
     }
 
     .hero-figure-text {
-      font-size: 1.22em;      /* was 1.15em */
-      line-height: 1.55;
-      font-weight: 700;
-      margin-bottom: 22px;   /* more air */
-      color: #1f1f1f;
+      font-size: 1.15em;
+      line-height: 1.5;
+      font-weight: 600; /* was 700 */
+      margin-bottom: 18px;
     }
-
 
     .engineering-stack {
-      margin-top: 22px;
-      font-size: 1.08em;
-      line-height: 1.6;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 2px solid rgba(0, 74, 153, 0.15);
+      font-size: 1.05em;
+      line-height: 1.55;
       color: #333;
     }
-
-
-    
+   
 
     /* SECTION */
     .section-title {
@@ -383,12 +383,20 @@
     
       <!-- RIGHT COLUMN -->
       <div class="hero-image">
+      
         <div class="hero-figure-text">
           I design, prototype, and validate <strong>mechanical systems for humanoid locomotion</strong>,
           from <strong>simulation-driven design</strong> to <strong>real-world experiments</strong>.
         </div>
       
+        <div class="engineering-stack">
+          <strong>Engineering stack</strong><br>
+          Mechanical design · CAD · compliant mechanisms · pneumatics · machining · 3D printing<br>
+          Python · C/C++ · ROS · Isaac Gym · MuJoCo
+        </div>
+      
         <img src="images/locomotion.png" alt="Humanoid locomotion">
+      
       </div>
 
 
