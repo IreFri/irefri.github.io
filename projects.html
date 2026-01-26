@@ -101,16 +101,20 @@
     }
 
     .project h2 {
-      margin: 0 0 10px;
-      font-size: 1.55em;
+      margin: 0 0 12px;
+      font-size: 1.7em;
     }
-
+    
     .project p {
-      margin: 0 0 10px;
-      line-height: 1.6;
-      font-size: 1.08em;
+      margin: 0 0 12px;
+      line-height: 1.65;
+      font-size: 1.18em;
     }
 
+    .project strong {
+      color: #003a7a;
+    }
+    
     .tagrow {
       margin-top: 10px;
     }
@@ -166,7 +170,7 @@
       spanning <strong>control</strong>, <strong>simulation</strong>, <strong>hardware prototyping</strong>, and <strong>real-world experiments</strong>.
     </div>
 
-        <!-- PROJECT CONTROL -->
+    <!-- PROJECT CONTROL -->
     <div class="project">
       <div class="project-inner">
         <div class="project-media">
@@ -182,10 +186,12 @@
           <h2>RGB-D Terrain Scanning for Foothold Planning</h2>
 
           <p>
-            <strong>Goal:</strong> Enable reliable foot placement by converting depth sensing into actionable terrain information.<br>
-            <strong>What I built:</strong> A real-time <strong>RGB-D ground scanning</strong> pipeline for terrain estimation and foothold selection.<br>
-            <strong>How it was validated:</strong> Integrated perception + planning with locomotion, focusing on <strong>latency</strong>, robustness, and deployment constraints.
+            Designed a <strong>real-time RGB-D perception pipeline</strong> that converts depth data into
+            <strong>reliable foothold candidates</strong> for humanoid locomotion.<br>
+            Integrated <strong>perception, planning, and control</strong> in a closed-loop system and
+            validated performance under <strong>latency and terrain uncertainty</strong>.
           </p>
+
 
           <div class="tagrow">
             <span class="tag">Perception</span>
@@ -215,9 +221,10 @@
           <h2>Adaptive Soft Feet for Stable Landing and Terrain Interaction</h2>
 
           <p>
-            <strong>Goal:</strong> Increase <strong>landing stability</strong> and reduce impact sensitivity during dynamic locomotion.<br>
-            <strong>What I built:</strong> Pneumatically actuated soft feet with <strong>tunable stiffness</strong>, compliant structure, and sensing for contact-aware behavior.<br>
-            <strong>How it was validated:</strong> Experimental evaluation on humanoid setups focusing on <strong>stability</strong>, <strong>contact behavior</strong>, and repeatability.
+            Developed <strong>pneumatically actuated soft feet</strong> with
+            <strong>tunable stiffness</strong> to improve landing robustness and contact interaction.<br>
+            Validated through <strong>hardware experiments</strong>, demonstrating improved
+            <strong>impact absorption</strong> and <strong>stable terrain interaction</strong>.
           </p>
 
           <div class="tagrow">
@@ -249,9 +256,10 @@
           <h2>Compliant Leg Joints for Robust Humanoid Locomotion</h2>
 
           <p>
-            <strong>Goal:</strong> Improve robustness to <strong>impacts</strong> and <strong>terrain uncertainty</strong> during humanoid locomotion.<br>
-            <strong>What I built:</strong> A compliant joint model with <strong>parallel</strong> and <strong>series</strong> elasticity integrated into a full simulation pipeline.<br>
-            <strong>How it was validated:</strong> Stress-tested stability and recovery using <strong>learning-based testing</strong> in <strong>Isaac Gym</strong> (large-scale rollouts and perturbations).
+            Implemented <strong>compliant leg joints</strong> with
+            <strong>parallel and series elasticity</strong> for robust humanoid locomotion.<br>
+            Evaluated stability and recovery using <strong>large-scale simulation</strong> and
+            <strong>learning-based stress testing</strong> in Isaac Gym.
           </p>
 
           <div class="tagrow">
@@ -282,9 +290,10 @@
           <h2>Tunable-Stiffness Actuation: Design, Modeling, and Test</h2>
 
           <p>
-            <strong>Goal:</strong> Improve adaptability in contact tasks through stiffness modulation at the actuator level.<br>
-            <strong>What I built:</strong> A tunable-stiffness actuator and a characterization workflow (modeling + experiments).<br>
-            <strong>How it was validated:</strong> Quantified <strong>stiffness range</strong>, <strong>response time</strong>, and <strong>repeatability</strong> to support design trade-offs.
+            Designed and modeled a <strong>tunable-stiffness actuator</strong> for contact-rich robotic tasks.<br>
+            Characterized <strong>stiffness range</strong>, <strong>response time</strong>, and
+            <strong>repeatability</strong> through systematic experimental testing to support
+            engineering design decisions.
           </p>
 
           <div class="tagrow">
