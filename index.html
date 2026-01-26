@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-
     body {
       font-family: "Times New Roman", Times, serif;
       background-color: #dde8f5;
@@ -16,13 +15,13 @@
     }
 
     .container {
-      max-width: 980px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 50px 25px 70px;
+      padding: 50px 25px 80px;
     }
 
     nav {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
       font-size: 1.12em;
     }
 
@@ -30,100 +29,99 @@
       margin-right: 18px;
       text-decoration: none;
       color: #004a99;
+      font-weight: 600;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.15em;
-    }
-
-    .subtitle {
-      font-size: 1.35em;
-      margin-bottom: 22px;
-    }
-
+    /* HERO */
     .hero {
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+      margin-bottom: 90px;
     }
 
-    .hero-text {
-      flex: 2;
-      font-size: 1.18em;
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
     }
 
-    .hero-text p {
-      margin-bottom: 14px;
-      line-height: 1.55;
-    }
-
-    .hero-image {
-      flex: 1;
-      text-align: center;
-    }
-
-    .hero-image img {
-      max-width: 160px;
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .card {
-      margin-top: 40px;
-      padding: 22px 24px;
-      background: rgba(255,255,255,0.35);
-      border-radius: 12px;
-    }
-
-    .buttonrow a {
-      display: inline-block;
-      margin-right: 14px;
-      margin-top: 10px;
-      color: #004a99;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .buttonrow a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section headings */
-    .section-title {
-      font-size: 1.55em;
+    h1 {
+      font-size: 3.4em;
       margin: 0 0 10px;
     }
 
-    .section-sub {
-      margin: 0 0 12px;
-      line-height: 1.55;
-    }
-
-    .pillrow .pill {
-      display: inline-block;
-      margin-right: 8px;
-      margin-top: 10px;
-      padding: 4px 11px;
-      border-radius: 999px;
-      background: rgba(0, 74, 153, 0.10);
+    .role {
+      font-size: 1.6em;
+      font-weight: 700;
       color: #003a7a;
-      font-size: 0.95em;
+      margin-bottom: 22px;
     }
 
-    .smalllinks a {
-      margin-right: 14px;
+    .hero-points {
+      font-size: 1.35em;
+      line-height: 1.6;
+    }
+
+    .hero-points div {
+      margin-bottom: 10px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 14px;
+    }
+
+    /* SECTION */
+    .section-title {
+      font-size: 2.1em;
+      margin-bottom: 24px;
+    }
+
+    /* PROJECT GRID */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 34px;
+    }
+
+    .project-card {
+      border: 2px solid rgba(0, 74, 153, 0.18);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+
+    .project-title {
+      font-size: 1.45em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .project-desc {
+      font-size: 1.15em;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+
+    .project-link {
+      font-size: 1.1em;
+      font-weight: 700;
       color: #004a99;
       text-decoration: none;
-      font-weight: 600;
     }
 
-    .smalllinks a:hover {
+    .project-link:hover {
       text-decoration: underline;
     }
   </style>
@@ -132,7 +130,6 @@
 <body>
   <div class="container">
 
-    <!-- NAV on index uses anchors so scrolling works -->
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -142,64 +139,61 @@
       <a href="cv.html">CV</a>
     </nav>
 
-    <!-- HOME / HERO -->
-    <div id="home" class="hero">
-      <div class="hero-text">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
         <h1>Irene Frizza</h1>
+        <div class="role">Robotics Research Engineer · Ph.D.</div>
 
-        <div class="subtitle">
-          Research Engineer developing robust locomotion and control systems for humanoid robots<br>
-          <span style="font-size:0.9em; color:#444;">Ph.D. in Robotics</span>
+        <div class="hero-points">
+          <div><strong>Humanoid locomotion</strong> under impacts and terrain uncertainty</div>
+          <div><strong>Control & compliance</strong> for contact-rich interaction</div>
+          <div><strong>Simulation-driven design</strong> (Isaac Gym, MuJoCo)</div>
+          <div><strong>Hardware-informed solutions</strong> from model to experiment</div>
         </div>
-
-        <p>
-          I design <strong>locomotion and control systems for humanoid robots</strong>,
-          with a focus on <strong>robustness, contact-rich interaction, and adaptive compliance</strong>.
-        </p>
-
-        <p>
-          My work addresses the challenge of making humanoids <strong>walk, recover, and interact reliably</strong>
-          in the presence of impacts, uneven terrain, and physical uncertainty.
-        </p>
-
-        <p>
-          I build and evaluate solutions using <strong>physics-based simulation</strong>,
-          <strong>control design</strong>, and <strong>learning-based optimization</strong>,
-          with hands-on experience in <strong>soft feet</strong>, <strong>compliant joints</strong>,
-          and <strong>simulation-to-experiment pipelines</strong>.
-        </p>
-
       </div>
 
       <div class="hero-image">
-        <img src="profile.jpg" alt="Irene Frizza">
+        <img src="images/locomotion.png" alt="Humanoid locomotion">
       </div>
-    </div>
+    </section>
 
-    <!-- SELECTED WORK (images) -->
-    <div class="card">
-      <strong>Selected work</strong><br><br>
+    <!-- SELECTED PROJECTS -->
+    <section>
+      <div class="section-title">Selected projects</div>
 
-      <div style="display:flex; gap:30px; flex-wrap:wrap; justify-content:center;">
-        <div style="flex:1; min-width:300px; max-width:420px; text-align:center;">
-          <img src="images/locomotion.png" style="width:100%; border-radius:10px;" alt="Humanoid locomotion">
-          <div style="margin-top:10px; font-size:0.95em; line-height:1.45;">
-            <strong>Humanoid locomotion on uneven terrain</strong><br>
-            Robust balance and contact interaction with compliant control strategies.
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="images/terrain_scanning.png" alt="Terrain scanning">
+          <div class="project-title">RGB-D Foothold Planning</div>
+          <div class="project-desc">
+            Real-time perception pipeline converting depth data into reliable foot placement for humanoids.
           </div>
+          <a class="project-link" href="projects.html">View project →</a>
         </div>
 
-        <div style="flex:1; min-width:300px; max-width:420px; text-align:center;">
-          <img src="images/soft_foot.png" style="width:100%; border-radius:10px;" alt="Adaptive soft robotic foot">
-          <div style="margin-top:10px; font-size:0.95em; line-height:1.45;">
-            <strong>Adaptive soft robotic foot</strong><br>
-            Variable stiffness using pneumatic actuation for impact absorption and terrain adaptation.
+        <div class="project-card">
+          <img src="images/soft_foot.png" alt="Soft robotic foot">
+          <div class="project-title">Adaptive Soft Feet</div>
+          <div class="project-desc">
+            Pneumatically actuated feet with tunable stiffness for stable landing and impact absorption.
           </div>
+          <a class="project-link" href="projects.html">View project →</a>
         </div>
-      </div>
-    </div>
 
-    
+        <div class="project-card">
+          <img src="images/leg_joints.png" alt="Compliant joints">
+          <div class="project-title">Compliant Leg Joints</div>
+          <div class="project-desc">
+            Parallel and series elastic joints evaluated through large-scale simulation stress testing.
+          </div>
+          <a class="project-link" href="projects.html">View project →</a>
+        </div>
+
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
