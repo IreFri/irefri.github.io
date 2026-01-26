@@ -72,6 +72,35 @@
     strong {
       color: #003a7a;
     }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 16px;
+    }
+    
+    .focus-item {
+      border: 2px solid rgba(0, 74, 153, 0.18);
+      border-radius: 14px;
+      padding: 18px 20px;
+      background: transparent;
+    }
+    
+    .focus-title {
+      font-size: 1.45em;
+      font-weight: 700;
+      color: #003a7a;
+      margin-bottom: 8px;
+    }
+    
+    .focus-desc {
+      font-size: 1.08em;
+      line-height: 1.5;
+      color: #1f1f1f;
+    }
+
+    
   </style>
 </head>
 
@@ -89,37 +118,38 @@
 
     <h1>Research</h1>
 
-    <!-- THEMES -->
+    <!-- RESEARCH FOCUS -->
     <div class="section">
-      <div class="section-title"><strong>Topics & Technical Focus</strong></div>
+      <div class="section-title"><strong>Research focus</strong></div>
     
-      <ul>
-        <li>
-          <strong>Humanoid locomotion</strong> —
-          contact uncertainty · push recovery · uneven terrain
-        </li>
+      <div class="focus-grid">
+        <div class="focus-item">
+          <div class="focus-title">Humanoid Locomotion</div>
+          <div class="focus-desc">Uneven terrain · push recovery · contact uncertainty</div>
+        </div>
     
-        <li>
-          <strong>Compliant mechanisms</strong> —
-          soft feet · compliant leg joints · impact handling
-        </li>
+        <div class="focus-item">
+          <div class="focus-title">Compliant Mechanisms</div>
+          <div class="focus-desc">Soft feet · compliant leg joints · impact handling</div>
+        </div>
     
-        <li>
-          <strong>Variable impedance</strong> —
-          adaptive compliance · safe physical interaction
-        </li>
+        <div class="focus-item">
+          <div class="focus-title">Variable Impedance</div>
+          <div class="focus-desc">Adaptive compliance · safe physical interaction</div>
+        </div>
     
-        <li>
-          <strong>Simulation-driven development</strong> —
-          large-scale evaluation · Isaac Gym · MuJoCo
-        </li>
+        <div class="focus-item">
+          <div class="focus-title">Simulation-Driven Design</div>
+          <div class="focus-desc">Large-scale evaluation · Isaac Gym · MuJoCo</div>
+        </div>
     
-        <li>
-          <strong>Learning-based analysis</strong> —
-          stress testing · robustness optimization · RL
-        </li>
-      </ul>
+        <div class="focus-item">
+          <div class="focus-title">Learning-Based Analysis</div>
+          <div class="focus-desc">Stress testing · robustness optimization · RL</div>
+        </div>
+      </div>
     </div>
+
 
 
     <!-- JOURNALS -->
