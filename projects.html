@@ -146,6 +146,19 @@
       text-decoration: underline;
     }
 
+    .figure-grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    
+    .figure-grid img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
     @media (max-width: 700px) {
       .project-media { max-width: 100%; }
     }
@@ -170,41 +183,6 @@
       spanning <strong>control</strong>, <strong>simulation</strong>, <strong>hardware prototyping</strong>, and <strong>real-world experiments</strong>.
     </div>
 
-    <!-- PROJECT CONTROL -->
-    <div class="project">
-      <div class="project-inner">
-        <div class="project-media">
-          <img src="images/terrain_scanning.png" alt="RGB-D terrain perception project figure">
-
-          <div class="media-links">
-            <a href="https://drive.google.com/file/d/1zyfCjptaHkPlgJCGj33eTmNyJyYo5lCE/view" target="_blank" rel="noopener">Video</a>
-            <a href="https://www.dropbox.com/scl/fi/nrp2p1lnu7mcizpl87h4v/Control_algorithms_compliant_foot___JIRS.pdf?rlkey=dylo6bspo5s40jg1wlt1jr6vh&st=he4zx2ll&dl=0" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </div>
-
-        <div class="project-content">
-          <h2>RGB-D Terrain Scanning for Foothold Planning</h2>
-
-          <p>
-            Designed a <strong>real-time RGB-D perception pipeline</strong> that converts depth data into
-            <strong>reliable foothold candidates</strong> for humanoid locomotion.<br>
-            Integrated <strong>perception, planning, and control</strong> in a closed-loop system and
-            validated performance under <strong>latency and terrain uncertainty</strong>.
-          </p>
-
-
-          <div class="tagrow">
-            <span class="tag">Perception</span>
-            <span class="tag">RGB-D</span>
-            <span class="tag">Real-time</span>
-            <span class="tag">Foothold Planning</span>
-            <span class="tag">Integration</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <!-- PROJECT SOFT FEET -->
     <div class="project">
       <div class="project-inner">
@@ -226,6 +204,13 @@
             Validated through <strong>hardware experiments</strong>, demonstrating improved
             <strong>impact absorption</strong> and <strong>stable terrain interaction</strong>.
           </p>
+
+          <div class="figure-grid">
+            <img src="images/foot_back_described.png" alt="Soft foot mechanical structure">
+            <img src="images/foot_side_described.png" alt="Soft foot arch mechanism">
+            <img src="images/manufacturing_process.png" alt="Manufacturing process">
+            <img src="images/robot_sequence.png" alt="Humanoid walking experiment">
+          </div>
 
           <div class="tagrow">
             <span class="tag">Soft Robotics</span>
@@ -304,6 +289,41 @@
             <span class="tag">Hardware</span>
           </div>
 
+        </div>
+      </div>
+
+      <!-- PROJECT CONTROL -->
+      <div class="project">
+        <div class="project-inner">
+          <div class="project-media">
+            <img src="images/terrain_scanning.png" alt="RGB-D terrain perception project figure">
+  
+            <div class="media-links">
+              <a href="https://drive.google.com/file/d/1zyfCjptaHkPlgJCGj33eTmNyJyYo5lCE/view" target="_blank" rel="noopener">Video</a>
+              <a href="https://www.dropbox.com/scl/fi/nrp2p1lnu7mcizpl87h4v/Control_algorithms_compliant_foot___JIRS.pdf?rlkey=dylo6bspo5s40jg1wlt1jr6vh&st=he4zx2ll&dl=0" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </div>
+  
+          <div class="project-content">
+            <h2>RGB-D Terrain Scanning for Foothold Planning</h2>
+  
+            <p>
+              Designed a <strong>real-time RGB-D perception pipeline</strong> that converts depth data into
+              <strong>reliable foothold candidates</strong> for humanoid locomotion.<br>
+              Integrated <strong>perception, planning, and control</strong> in a closed-loop system and
+              validated performance under <strong>latency and terrain uncertainty</strong>.
+            </p>
+  
+  
+            <div class="tagrow">
+              <span class="tag">Perception</span>
+              <span class="tag">RGB-D</span>
+              <span class="tag">Real-time</span>
+              <span class="tag">Foothold Planning</span>
+              <span class="tag">Integration</span>
+            </div>
+  
+          </div>
         </div>
       </div>
 
