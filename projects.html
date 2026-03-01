@@ -156,6 +156,30 @@
       text-decoration: underline;
     }
 
+    .project-title-link {
+      color: #004a99;
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 3px;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    
+    .project-title-link:hover {
+      color: #0066cc;
+      text-decoration-thickness: 2.5px;
+    }
+    
+    .project-link img {
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    
+    .project-link img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
     @media (max-width: 700px) {
       .project-media { max-width: 100%; }
     }
@@ -197,7 +221,7 @@
         <div class="project-content">
           <h2>
             <a href="inner_foot.html" class="project-title-link">
-              Adaptive Soft Feet for Stable Landing and Terrain Interaction
+              Adaptive Soft Feet for Stable Landing and Terrain Interaction →
             </a>
           </h2>
     
