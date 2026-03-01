@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Compliant Leg Joints — Irene Frizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5;
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 28px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 10px 0 18px;
+      color: #004a99;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin: 8px 0 10px;
+    }
+
+    .subtitle {
+      font-size: 1.15em;
+      line-height: 1.6;
+      max-width: 950px;
+      margin-bottom: 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+
+    .span-12 { grid-column: span 12; }
+    .span-6  { grid-column: span 6; }
+
+    figure {
+      margin: 0;
+      background: rgba(255,255,255,0.35);
+      border: 2px solid rgba(0, 74, 153, 0.14);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 1.02em;
+      line-height: 1.45;
+    }
+
+    .imglink {
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .span-6 { grid-column: span 12; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="research.html">Research</a>
+  <a href="experience.html">Experience</a>
+  <a href="skills.html">Skills</a>
+  <a href="cv.html">CV</a>
+</nav>
+
+<a class="back" href="projects.html">← Back to Projects</a>
+
+<h1>Compliant Leg Joints for Robust Humanoid Locomotion</h1>
+
+<div class="subtitle">
+This project investigates how compliant joints improve humanoid locomotion robustness.  
+Both <strong>parallel</strong> and <strong>series elasticity models</strong> were implemented and evaluated using reinforcement learning in Isaac Gym, enabling adaptive stiffness and improved stability across challenging terrains.
+</div>
+
+
+<div class="grid">
+
+<!-- Control architecture -->
+<figure class="span-12">
+<a class="imglink" href="images/control_scheme.png" target="_blank">
+<img src="images/control_scheme.png">
+</a>
+<figcaption>
+<strong>Control architecture.</strong> Reinforcement learning policy outputs torque and adaptive stiffness parameters integrated into compliant joint models.
+</figcaption>
+</figure>
+
+
+<!-- Joint mechanics -->
+<figure class="span-12">
+<a class="imglink" href="images/SoftJoints.png" target="_blank">
+<img src="images/SoftJoints.png">
+</a>
+<figcaption>
+<strong>Compliant joint models.</strong> Parallel and series elastic elements added to humanoid joints to enable tunable stiffness and damping.
+</figcaption>
+</figure>
+
+
+<!-- Gait cycle stiffness -->
+<figure class="span-12">
+<a class="imglink" href="images/joints_gait_cycle.png" target="_blank">
+<img src="images/joints_gait_cycle.png">
+</a>
+<figcaption>
+<strong>Adaptive stiffness across gait cycle.</strong> Learned stiffness and damping values vary dynamically depending on locomotion phase.
+</figcaption>
+</figure>
+
+
+<!-- Performance comparison -->
+<figure class="span-6">
+<a class="imglink" href="images/radar_chart.png" target="_blank">
+<img src="images/radar_chart.png">
+</a>
+<figcaption>
+<strong>Performance comparison.</strong> Variable stiffness improves stability, energy efficiency, and robustness compared to rigid joints.
+</figcaption>
+</figure>
+
+
+<!-- Environments -->
+<figure class="span-6">
+<a class="imglink" href="images/environments.png" target="_blank">
+<img src="images/environments.png">
+</a>
+<figcaption>
+<strong>Evaluation environments.</strong> Policy tested across discrete obstacles, stepping stones, slopes, and uneven terrain.
+</figcaption>
+</figure>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
