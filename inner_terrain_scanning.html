@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RGB-D Terrain Scanning — Irene Frizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body{
+      font-family:"Times New Roman", Times, serif;
+      background-color:#dde8f5;
+      margin:0; padding:0;
+      color:#1f1f1f;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:50px 25px 70px;
+    }
+
+    nav{
+      margin-bottom:28px;
+      font-size:1.12em;
+    }
+    nav a{
+      margin-right:18px;
+      text-decoration:none;
+      color:#004a99;
+    }
+    nav a:hover{ text-decoration:underline; }
+
+    .back{
+      display:inline-block;
+      margin:10px 0 18px;
+      color:#004a99;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .back:hover{ text-decoration:underline; }
+
+    h1{
+      font-size:2.2em;
+      margin:8px 0 10px;
+    }
+
+    .subtitle{
+      font-size:1.15em;
+      line-height:1.6;
+      max-width:950px;
+      margin-bottom:22px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12, 1fr);
+      gap:16px;
+    }
+
+    .span-12{ grid-column: span 12; }
+    .span-6 { grid-column: span 6; }
+
+    figure{
+      margin:0;
+      background:rgba(255,255,255,0.35);
+      border:2px solid rgba(0,74,153,0.14);
+      border-radius:14px;
+      padding:12px;
+    }
+
+    figure img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:10px;
+    }
+
+    figcaption{
+      margin-top:10px;
+      font-size:1.02em;
+      line-height:1.45;
+      color:#1f1f1f;
+    }
+
+    .imglink{ display:block; }
+
+    @media (max-width: 900px){
+      .span-6{ grid-column: span 12; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <a class="back" href="projects.html">← Back to Projects</a>
+
+    <h1>RGB-D Terrain Scanning for Foothold Planning</h1>
+    <div class="subtitle">
+      A compact visual overview of how the RGB-D scan is converted into a safe region of interest and foothold candidate.
+      Click any figure to open it full-size.
+    </div>
+
+    <div class="grid">
+      <!-- BIG: main concept illustration -->
+      <figure class="span-12">
+        <a class="imglink" href="images/control.png" target="_blank" rel="noopener">
+          <img src="images/control.png" alt="Foothold planning concept using convex hull / tangent constraints">
+        </a>
+        <figcaption><strong>Foothold reasoning.</strong> Using local ground geometry (e.g., convex hull/tangent constraints) to infer safe contact/landing conditions.</figcaption>
+      </figure>
+
+      <!-- BIG: alternative schematic / more detail -->
+      <figure class="span-12">
+        <a class="imglink" href="images/control2.png" target="_blank" rel="noopener">
+          <img src="images/control2.png" alt="Scanning region of interest and convex hull">
+        </a>
+        <figcaption><strong>Region of interest.</strong> The scan focuses on the area ahead of the foot (landing region), building a geometric representation for planning.</figcaption>
+      </figure>
+
+      <!-- BIG: pipeline / integration (if this is a pipeline-style figure) -->
+      <figure class="span-12">
+        <a class="imglink" href="images/control3.png" target="_blank" rel="noopener">
+          <img src="images/control3.png" alt="System overview / integration with humanoid">
+        </a>
+        <figcaption><strong>System integration.</strong> RGB-D perception connected to foothold selection and step execution under real-time constraints.</figcaption>
+      </figure>
+
+      <!-- Half: experimental snapshots -->
+      <figure class="span-12">
+        <a class="imglink" href="images/control1.jpg" target="_blank" rel="noopener">
+          <img src="images/control1.jpg" alt="Experimental snapshots">
+        </a>
+        <figcaption><strong>Experimental validation.</strong> Example sequence demonstrating scanning + stepping on a test setup.</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
