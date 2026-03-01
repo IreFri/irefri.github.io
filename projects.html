@@ -156,18 +156,22 @@
       text-decoration: underline;
     }
 
-    .project-title-link {
+    .project-title-link,
+    .project-title-link:visited{
       color: #004a99;
       text-decoration: underline;
-      text-decoration-thickness: 1.5px;
+      text-decoration-thickness: 2px;
       text-underline-offset: 3px;
-      transition: all 0.15s ease;
-      cursor: pointer;
+      font-weight: 700;
     }
-    
-    .project-title-link:hover {
-      color: #0066cc;
-      text-decoration-thickness: 2.5px;
+    .project-title-link:hover{
+      background: rgba(0,74,153,0.10);
+      border-radius: 6px;
+      padding: 0 6px;
+    }
+    .project-title-link::after{
+      content: " ↗";
+      font-weight: 700;
     }
     
     .project-link img {
@@ -282,24 +286,31 @@
     <div class="project">
       <div class="project-inner">
         <div class="project-media">
-          <img src="images/tunable_actuator.png" alt="Tunable stiffness actuation project figure">
-
-           <div class="media-links">
+    
+          <a href="inner_actuator.html" class="project-link">
+            <img src="images/tunable_actuator.png" alt="Tunable stiffness actuation project figure">
+          </a>
+    
+          <div class="media-links">
             <a href="https://drive.google.com/file/d/128FGaSlWmriPEm52kYXvozDvRD2qrr_D/view" target="_blank" rel="noopener">Video</a>
             <a href="https://www.dropbox.com/scl/fi/9535mv8bx5kwtmuiuvn41/Soft_actuator___Machines.pdf?rlkey=9i7glcv5oabk00f3uie91j1zh&st=lp8sp9qo&dl=0" target="_blank" rel="noopener">Paper</a>
           </div>
         </div>
-
+    
         <div class="project-content">
-          <h2>Tunable-Stiffness Actuation: Design, Modeling, and Test</h2>
-
+          <h2>
+            <a href="inner_actuator.html" class="project-title-link">
+              Tunable-Stiffness Actuation: Design, Modeling, and Test
+            </a>
+          </h2>
+    
           <p>
             Designed and modeled a <strong>tunable-stiffness actuator</strong> for contact-rich robotic tasks.<br>
             Characterized <strong>stiffness range</strong>, <strong>response time</strong>, and
             <strong>repeatability</strong> through systematic experimental testing to support
             engineering design decisions.
           </p>
-
+    
           <div class="tagrow">
             <span class="tag">Actuators</span>
             <span class="tag">Mechanics</span>
@@ -307,7 +318,6 @@
             <span class="tag">Testing</span>
             <span class="tag">Hardware</span>
           </div>
-          
         </div>
       </div>
     </div>
