@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tunable-Stiffness Actuation — Irene Frizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #dde8f5;
+      margin: 0;
+      padding: 0;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    nav {
+      margin-bottom: 28px;
+      font-size: 1.12em;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004a99;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .back {
+      display: inline-block;
+      margin: 10px 0 18px;
+      color: #004a99;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: 2.2em;
+      margin: 8px 0 10px;
+    }
+
+    .subtitle {
+      font-size: 1.15em;
+      line-height: 1.6;
+      max-width: 950px;
+      margin-bottom: 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+
+    .span-12 { grid-column: span 12; }
+    .span-6  { grid-column: span 6; }
+
+    figure {
+      margin: 0;
+      background: rgba(255,255,255,0.35);
+      border: 2px solid rgba(0, 74, 153, 0.14);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 1.02em;
+      line-height: 1.45;
+      color: #1f1f1f;
+    }
+
+    .imglink { display: block; }
+
+    @media (max-width: 900px) {
+      .span-6 { grid-column: span 12; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <a class="back" href="projects.html">← Back to Projects</a>
+
+    <h1>Tunable-Stiffness Actuation: Design, Modeling, and Test</h1>
+    <div class="subtitle">
+      Gallery of design, fabrication, control, and characterization results.
+      Click any image to open it full-size.
+    </div>
+
+    <div class="grid">
+
+      <!-- BIG: concept / overview -->
+      <figure class="span-12">
+        <a class="imglink" href="images/actuator_functionality.png" target="_blank" rel="noopener">
+          <img src="images/actuator_functionality.png" alt="Actuator functionality overview">
+        </a>
+        <figcaption><strong>Concept and functionality.</strong> Tunable stiffness through pneumatic actuation and modular structure.</figcaption>
+      </figure>
+
+      <!-- BIG: fabrication method -->
+      <figure class="span-12">
+        <a class="imglink" href="images/Fabrication_method.png" target="_blank" rel="noopener">
+          <img src="images/Fabrication_method.png" alt="Fabrication method">
+        </a>
+        <figcaption><strong>Fabrication workflow.</strong> Core fabrication, assembly, casting, and final actuator construction.</figcaption>
+      </figure>
+
+      <!-- Half: molds and sizes -->
+      <figure class="span-6">
+        <a class="imglink" href="images/molds.png" target="_blank" rel="noopener">
+          <img src="images/molds.png" alt="Mold CAD and assembly">
+        </a>
+        <figcaption><strong>Molds.</strong> CAD and assembly views for wax-core and Ecoflex casting molds.</figcaption>
+      </figure>
+
+      <figure class="span-6">
+        <a class="imglink" href="images/sizes.png" target="_blank" rel="noopener">
+          <img src="images/sizes.png" alt="Actuator dimensions and design parameters">
+        </a>
+        <figcaption><strong>Geometry and parameters.</strong> Dimensions, chamber layout, and key design variables.</figcaption>
+      </figure>
+
+      <!-- Half: pneumatic circuit + state machine -->
+      <figure class="span-6">
+        <a class="imglink" href="images/Electro-pneumatic_circuit.png" target="_blank" rel="noopener">
+          <img src="images/Electro-pneumatic_circuit.png" alt="Electro-pneumatic circuit">
+        </a>
+        <figcaption><strong>Electro-pneumatic setup.</strong> Valves, pump/regulator, and sensing/control hardware.</figcaption>
+      </figure>
+
+      <figure class="span-6">
+        <a class="imglink" href="images/FSM.png" target="_blank" rel="noopener">
+          <img src="images/FSM.png" alt="Finite state machine for control">
+        </a>
+        <figcaption><strong>Control logic.</strong> Finite-state strategy (inflate/deflate/stabilize) for pressure regulation.</figcaption>
+      </figure>
+
+      <!-- Half: step response + mechanical response -->
+      <figure class="span-6">
+        <a class="imglink" href="images/step_response.png" target="_blank" rel="noopener">
+          <img src="images/step_response.png" alt="Pressure step response">
+        </a>
+        <figcaption><strong>Step response.</strong> Desired vs. measured pressure tracking across target pressure levels.</figcaption>
+      </figure>
+
+      <figure class="span-6">
+        <a class="imglink" href="images/mechanical_response.png" target="_blank" rel="noopener">
+          <img src="images/mechanical_response.png" alt="Mechanical response vs pressure">
+        </a>
+        <figcaption><strong>Mechanical characterization.</strong> Deflection, bending angle/stiffness, and model vs. experiments.</figcaption>
+      </figure>
+
+      <!-- Half: experiments + example (finger) -->
+      <figure class="span-6">
+        <a class="imglink" href="images/experiments.png" target="_blank" rel="noopener">
+          <img src="images/experiments.png" alt="Experimental measurements at different pressures">
+        </a>
+        <figcaption><strong>Experimental validation.</strong> Deformation and measurements across pressure settings.</figcaption>
+      </figure>
+
+      <figure class="span-6">
+        <a class="imglink" href="images/finger.png" target="_blank" rel="noopener">
+          <img src="images/finger.png" alt="Demonstration / integration example">
+        </a>
+        <figcaption><strong>Demonstration / integration.</strong> Example usage scenario (prototype module in action).</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</body>
+</html>
