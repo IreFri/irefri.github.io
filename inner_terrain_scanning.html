@@ -110,37 +110,62 @@
     </div>
 
     <div class="grid">
-      <!-- BIG: main concept illustration -->
+
+      <!-- BIG: real robot stepping sequence -->
+      <figure class="span-12">
+        <a class="imglink" href="images/control_sequence.png" target="_blank" rel="noopener">
+          <img src="images/control_sequence.png" alt="Real humanoid robot stepping on uneven terrain">
+        </a>
+        <figcaption>
+          <strong>Real robot stepping sequence.</strong> The humanoid robot scans the terrain ahead using RGB-D sensing and executes adaptive footsteps to maintain stability on uneven ground.
+        </figcaption>
+      </figure>
+    
+    
+      <!-- BIG: rigid vs compliant comparison -->
       <figure class="span-12">
         <a class="imglink" href="images/control.png" target="_blank" rel="noopener">
-          <img src="images/control.png" alt="Foothold planning concept using convex hull / tangent constraints">
+          <img src="images/control.png" alt="Rigid vs compliant foot comparison">
         </a>
-        <figcaption><strong>Foothold reasoning.</strong> Using local ground geometry (e.g., convex hull/tangent constraints) to infer safe contact/landing conditions.</figcaption>
+        <figcaption>
+          <strong>Rigid vs compliant contact comparison.</strong> The compliant foot improves stability and robustness during walking on irregular terrain compared to rigid contact.
+        </figcaption>
+      </figure>
+    
+    
+      <!-- BIG: simulation validation -->
+      <figure class="span-12">
+        <a class="imglink" href="images/simulation_frame.png" target="_blank" rel="noopener">
+          <img src="images/simulation_frame.png" alt="Simulation validation of foothold planning">
+        </a>
+        <figcaption>
+          <strong>Simulation validation.</strong> The perception and foothold planning pipeline was validated in simulation before real robot deployment.
+        </figcaption>
       </figure>
 
-      <!-- BIG: alternative schematic / more detail -->
-      <figure class="span-12">
-        <a class="imglink" href="images/control2.png" target="_blank" rel="noopener">
-          <img src="images/control2.png" alt="Scanning region of interest and convex hull">
-        </a>
-        <figcaption><strong>Region of interest.</strong> The scan focuses on the area ahead of the foot (landing region), building a geometric representation for planning.</figcaption>
-      </figure>
 
-      <!-- BIG: pipeline / integration (if this is a pipeline-style figure) -->
+        <!-- BIG: RViz controller visualization (NEW - missing image) -->
       <figure class="span-12">
-        <a class="imglink" href="images/control3.png" target="_blank" rel="noopener">
-          <img src="images/control3.png" alt="System overview / integration with humanoid">
+        <a class="imglink" href="images/snap.png" target="_blank" rel="noopener">
+          <img src="images/snap.png" alt="RViz controller and foothold planning visualization">
         </a>
-        <figcaption><strong>System integration.</strong> RGB-D perception connected to foothold selection and step execution under real-time constraints.</figcaption>
+        <figcaption>
+          <strong>Controller visualization (RViz).</strong>
+          Real-time visualization of the humanoid model, terrain geometry, contact surfaces, and foothold planning within the control framework.
+        </figcaption>
       </figure>
-
-      <!-- Half: experimental snapshots -->
+    
+    
+      <!-- BIG: controller visualization -->
       <figure class="span-12">
-        <a class="imglink" href="images/control1.jpg" target="_blank" rel="noopener">
-          <img src="images/control1.jpg" alt="Experimental snapshots">
+        <a class="imglink" href="images/real_robot_frame.png" target="_blank" rel="noopener">
+          <img src="images/real_robot_frame.png" alt="Controller visualization and robot model">
         </a>
-        <figcaption><strong>Experimental validation.</strong> Example sequence demonstrating scanning + stepping on a test setup.</figcaption>
+        <figcaption>
+          <strong>Controller and perception integration.</strong> Visualization of the humanoid robot model and terrain representation used for real-time foothold planning.
+        </figcaption>
       </figure>
+    
     </div>
   </div>
 </body>
